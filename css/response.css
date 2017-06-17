@@ -1,0 +1,129 @@
+@media screen and (max-width: 768px) {
+  .HTbox {
+    width: 80%;
+  }
+  .head-main .HM-box {
+    width: 80%;
+  }
+  nav .N-box {
+    width: 80%;
+    overflow: hidden;
+  }
+  main .banner .MB-box ul {
+    display: none;
+  }
+  nav .N-box .NB-U2 li a {
+    padding: 0 13px;
+  }
+  .HTbox .HTBtool {
+    width: 87%;
+    height: 28px;
+    float: right;
+  }
+  .head-main .HM-box .HMB-left {
+    width: 25%;
+    height: 100%;
+    float: left;
+  }
+  .head-main .HM-box .HMB-right {
+    width: 75%;
+    height: 100%;
+    float: right;
+    position: relative;
+  }
+  main .banner .MB-box .MBB-bannerbox {
+    width: 95%;
+    height: 90%;
+    position: absolute;
+    top: 4%;
+    left: 2%;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .HTbox {
+    width: 80%;
+  }
+  .head-main .HM-box {
+    width: 80%;
+  }
+  nav .N-box {
+    width: 80%;
+    overflow: hidden;
+  }
+  main .banner .MB-box ul {
+    display: none;
+  }
+  nav .N-box .NB-U2 li a {
+    padding: 0 13px;
+  }
+  .HTbox .HTBtool {
+    width: 87%;
+    height: 28px;
+    float: right;
+  }
+  .head-main .HM-box .HMB-left {
+    width: 25%;
+    height: 100%;
+    float: left;
+  }
+  .head-main .HM-box .HMB-right {
+    width: 75%;
+    height: 100%;
+    float: right;
+    position: relative;
+  }
+  main .banner .MB-box .MBB-bannerbox {
+    width: 95%;
+    height: 90%;
+    position: absolute;
+    top: 4%;
+    left: 2%;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+  .HTbox {
+    width: 80%;
+  }
+  .head-main .HM-box {
+    width: 80%;
+  }
+  nav .N-box {
+    width: 80%;
+    overflow: hidden;
+  }
+  main .banner .MB-box ul {
+    width: 80%;
+    position: absolute;
+    bottom: 3px;
+    left: 0px;
+    padding: 0 10%;
+  }
+  main .banner .MB-box ul li {
+    height: auto;
+  }
+  nav .N-box .NB-U2 li a {
+    padding: 0 13px;
+  }
+}
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+  .HTbox {
+    width: 80%;
+  }
+  .head-main .HM-box {
+    width: 80%;
+    overflow: hidden;
+  }
+  nav .N-box {
+    width: 80%;
+  }
+  main .banner .MB-box ul {
+    width: 80%;
+    height: 10%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 0 10%;
+  }
+}

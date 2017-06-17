@@ -1,0 +1,830 @@
+/*main的css布局开始*/
+	.box{overflow: hidden;}
+	main{
+	
+		.M-box{
+			width: 53%;
+			margin: 0 auto;
+			min-width:1000px;
+			overflow: hidden;
+
+			.MB-product{
+				width: 100%;
+				margin-bottom: 60px;
+				.MBP-top-litpronav{
+					padding: 11px 0;
+				    overflow: hidden;
+				    text-overflow: ellipsis;
+				    white-space: nowrap;
+
+				    &>a{
+
+				    	float: left;
+				    	color: #333;
+				    }
+				}
+
+				.MBP-left-img{
+					width: 42%;
+					position: relative;
+					float: left;
+
+					.MBPLI-big-img{
+						width: 420px;
+						height: 531px;
+						img{
+							display: block;
+							width: 100%;
+							height: 100%;
+						}
+					
+					}
+			
+					#magnification{
+						width: 100%;
+						height: 531px;
+						position: absolute;
+						top:0;
+						left:0;
+						display: none;
+						overflow: hidden;
+						&>img{
+							position: absolute;
+							left: -680.952px;
+							 top: -568.041px;
+							 z-index:1;
+						}
+					}
+					#masking{
+						width: 100%;
+						height: 531px;
+						position: absolute;
+						// background:rgba(0,0,0,.1);
+						top:0;
+						left:0;
+						z-index:88;
+						overflow: hidden;
+					}
+					.MBPLI-little-img{
+						position: relative;
+					    width: 420px;
+					    height: 79px;
+					    margin-right: 1px;
+					    overflow: hidden;
+					    .UL-img{
+					    	width: 100%;
+
+					    	li{
+					    		width: 14.6%;
+					    		margin: 0 7px 0 0;
+					    		float: left;
+					    		
+					    		img{
+					    			width: 100%;
+					    			height: 77px;
+					    			&:hover{border:1px solid #F43499}
+					    		}
+					    	}
+					    }
+					}
+					
+				}
+				.MBP-right-product-info{
+					width: 54.6%;
+					height: 100%;
+					float: right;
+					.MBPR-top-title{
+						width: 100%;
+						color: #4d4d4d;
+					    margin-bottom: 10px;
+					    clear: both;
+					    .top-title{
+					    	overflow: hidden;
+						    white-space: nowrap;
+						    text-overflow: ellipsis;
+						    font-size: 12px;
+						    color: #777578;
+						    line-height: 22px;
+						    min-height: 22px;
+					    }
+
+					    .bottom-title{
+					    	font-size: 16px;
+						    color: #333;
+						    max-height: 40px;
+						    overflow: hidden;
+						    line-height: 20px;
+						    margin-top: 8px;
+						    margin-bottom: 8px;
+						    font-weight: 700;
+					    }
+					}
+
+					.MBPR-com-price{
+						width: 100%;
+						.MBPRC-main1{
+							width:100%;
+							height: 70px;
+							margin-bottom: 10px;
+						    padding-bottom: 15px;
+						    position: relative;
+						    z-index:0;
+						    background: #FAF5F8;
+
+						    .span-left{
+						    	font-family: arial;
+							    font-size: 48px;
+							    margin-left: 20px;
+							    display: inline-block;
+							    position: relative;
+							    color: #f43499;
+							    line-height: 1.2;
+							    margin-top: 13px;
+
+							    &>i{
+							    	display: inline-block;
+							    	font-size: 20px;
+							    }
+
+						    }
+						    .MBPRCP-right{
+						    	display: inline-block;
+							    z-index: 30;
+							    position: relative;
+							    vertical-align: top;
+							     margin: 0 16px 0 8px;
+							    margin-top: 24px;
+
+
+							    .MBPRCPR-span1{
+									position: relative;
+									display: block;
+								    font-size: 12px;
+								    color: #f43499;
+								    border-radius: 3px;
+								    text-align: center;
+								    border: 1px solid #f43499;
+								    padding: 0 5px;
+							    }
+							    .MBPRCPR-span2{
+								    color: #666;
+								    font-size: 14px;
+
+								    .span2-Price{
+									    color: #666;
+									    font-size: 14px;
+								    }
+							    }
+
+						    }
+
+					    }
+					    .MBPRC-main2{
+					    	width: 100%;
+					    	height: 380px;
+					    	margin-bottom: 20px;
+
+					    	.MBPRC-main2-top{
+					    		width: 100%;
+					    		padding-bottom: 57px;
+					    		.i-freight{
+									position: relative;
+								    padding: 0 11px;
+								    margin-left: -10px;
+								    z-index: 14;
+								    &>dt{
+								    	float: left;
+									    font-size: 12px;
+									    width: 40px;
+									    text-align: left;
+									    color: #999;
+									    line-height: 32px;
+								    }
+								    &>dd{
+								    	color: #666;
+	    								line-height: 30px;
+	    								position: relative;
+	    								padding: 2px 0;
+	    								font-size:12px;
+
+	    								&>span{
+
+	    									&>em{
+
+	    										display: inline-block;
+											    height: 18px;
+											    color: #fff;
+											    background-color: #f3b241;
+											    padding: 0 2px;
+											    line-height: 16px;
+	    									}
+	    								}
+								    }
+						    	}
+					    	}
+					    	.MBPRC-main2-bottom{
+					    		width: 100%;
+					    		overflow: hidden;
+							    font-size: 12px;
+							    line-height: 1.2;
+							    margin-bottom: 10px;
+
+							    .MBPRCM2B-header{
+							    	color: #fff;
+								    padding: 0 10px;
+								    line-height: 28px;
+								    font-size: 14px;
+								    margin-bottom: 10px;
+								    position: relative;
+								    background: #ea3896;
+
+								    &>h2{
+								    	width: 100%;
+								    	display: inline-block;
+								    	position: relative;
+									    font-size: 14px;
+									    font-weight: 400;
+
+									    &>span{
+									    	position: absolute;
+									    	right:0;
+									    	top:0;
+									    }
+								    }
+							    }
+							    .MBPRCMB-box{
+							    	position: relative;
+							    	margin-top:10px;
+    								height: 219px;
+    								.MBPRCMBB-bigbox{
+									    width:2180px;
+									    position: absolute;
+									  	height: 100%;
+									    left:0px;
+									    top:0px;
+									    &>ul{
+									    	width: 25%;
+									    	height: 100%;
+									    	float: left;
+									    	&>ol{
+									    		width: 23%;
+    											float: left;
+    											margin-left: 10px;
+									    		
+									    		&>li{
+									    			color: #BCB7BA;
+									    			text-align: center;
+												    font-family: '\5B8B\4F53';
+												    padding-top: 6px;
+												    overflow: hidden;
+												    text-overflow: ellipsis;
+												    white-space: nowrap;
+												    .price-vipshop {
+													    font-weight: 700;
+													    font-size: 14px;
+													    color: #f10180;
+													    font-family: Arial;
+													    line-height: 16px;
+													}
+													.price-agio {
+														color: #f10180;
+													    font-family: Arial;
+													    line-height: 16px;
+													    padding: 0 5px;
+													}
+													&>img{
+														transition:all .5s ease .1s;
+													}
+									    		}
+									    	}
+									    }
+    								}
+    								.btn1{
+    									width: 25px;
+    									height: 50px;
+    									line-height:50px;
+    									border-radius:2px;
+    									color:#F5E2F8;
+    									text-align: center;
+    									border:none;
+    									outline: none;
+    									position: absolute;
+    									top:59px;
+    									left:10px;
+    									z-index:1;
+    									font-size:20px;
+    									background:rgba(0,0,0,.2);
+    									display: none;
+    								}
+    								.btn2{
+    									width: 25px;
+    									height: 50px;
+    									line-height:50px;
+    									border-radius:2px;
+    									color:#F5E2F8;
+    									text-align: center;
+    									border:none;
+    									outline: none;
+    									position: absolute;
+    									top:59px;
+    									right:10px;
+    									z-index:1;
+    									font-size:20px;
+    									background:rgba(0,0,0,.2);
+    									display: none;
+    								}
+									&:hover .iconfont{
+										transition:all .8s  ease-in .5s;
+										display: block;
+
+									}
+							    }
+					    	}
+
+					    }
+					    .MBPRC-bottom{
+					    	width: 100%;
+					    	border-top: 1px dashed #e6e6e6;
+    						padding-top: 10px;
+
+    						&>.box{
+    							width: 550.672px;
+    							height: 36px;
+    							&>ul{
+    								width: 100%;
+								    padding: 9px 0;
+								    zoom: 1;
+								    &>li{
+								    	padding: 0 35px 0 85px;
+									    color: #bcb7ba;
+									    font-size: 14px;
+									    height:18px;
+									    line-height:18px;
+									    position: relative;
+									    border-left: 1px solid #c6bdc0;
+								    	float: left;
+								    	&>a{
+								    		color: #bcb7ba;
+    										text-decoration: none;
+								    	}
+								    }
+								    &>.pi-promise-item1{
+								    	border:none;
+								    	&>i{
+										    display: inline-block;
+										    position: absolute;
+										    top: -9px;
+										    left: 35px;
+										    width: 35px;
+										    height: 35px;
+								    		background:url(../images/pi-promise-item1.png)no-repeat -500px -150px;
+								    	}
+								    	&>a{
+								    		color: #bcb7ba;
+    										text-decoration: none;
+								    		vertical-align:18px;
+
+								    	}
+								    }
+    							}
+    						}
+					    }
+					}
+				}
+
+
+			}
+
+			.MB-product-mix{
+				width: 100%;
+				.MBPX-product-mix{
+					width: 100%;
+					margin-bottom: 30px;
+					
+					.MBPX-PM-box{
+						width: 100%;
+						.MBPXPMB-top{
+							width: 100%;
+						    height: 36px;
+						    border-top: 1px solid #e7e7e7;
+						    border-bottom: 3px solid #000;
+						    background-color: #fff;
+						    border-right: 1px solid #e7e7e7;
+						    .dt-list{
+						    	position: relative;
+						    	li{
+									float: left;
+    								height: 36px;
+    								&>a{
+    									display: block;
+									    padding: 0 15px;
+									    _width: 100px;
+									    _padding: 0;
+									    height: 36px;
+									    line-height: 36px;
+									    text-align: center;
+									    font-size: 14px;
+									    color: #333;
+									    border-left: 1px solid #e7e7e7;
+									    &:hover{
+											border-bottom: 3px solid #f10180;
+											color: #f10180;
+    									}
+    								}
+    								
+						    	}
+						    }
+						}
+						.MBPXPMB-bottom{
+							padding-top: 20px;
+    						font-size: 14px;
+    						.dc-tit-new{
+    							text-align: left;
+							    clear: both;
+							    padding-left: 20px;
+							    background: url(../images/detial_line.png) repeat-x left bottom;
+							    position: relative;
+							    padding-bottom: 6px;
+							    &>i{
+							    	top: 9px;
+								    left: 0;
+								    width: 13px;
+								    height: 13px;
+							    	background: url(../images/pi-promise-item1.png) no-repeat;
+							    	background-position: -250px -500px;
+								    position: absolute;
+							    }
+							    &>p{
+						    	    color: #f10180;
+									font-size: 20px;
+							    }
+    						}
+    						.dc-info{
+    							padding: 20px 0 40px 0;
+    							font-size: 14px;
+    							.dc-table{
+    								font-size: 14px;
+    								width: 100%;
+    								tbody{
+										display: table-row-group;
+    									vertical-align: middle;
+    									border-color: inherit;
+    									tr{
+    										display: table-row;
+    										vertical-align: inherit;
+    										border-color: inherit;
+    										td {
+											    font-family: arial,\5FAE\8F6F\96C5\9ED1;
+											    border: 1px solid #ededed;
+											    padding: 10px;
+											    color: #999;
+											    width: 370px;
+											}
+    										.dc-table-tit {
+											    text-align: right;
+											    background-color: #f5f5f5;
+											    color: #666;
+											    width: 90px;
+											    font-weight: 700;
+											    vertical-align: middle;
+											}
+    									}
+    								}
+    							}
+    						}
+    						.MBPXPMBB-img{
+    							width: 1000px;
+    							overflow: hidden;
+    							margin: 0 auto;
+    							padding: 20px 0;
+    							.dc-img-detail {
+								    text-align: center;
+								    padding-top: 10px;
+								    margin-bottom: 20px;
+								}
+								.dc-img-con {
+								    width: 1020px;
+								    text-align: center;
+								    img{
+
+								    	margin: 0 10px 20px 0;
+								    }
+								}
+    						}
+						}
+
+					}
+				}
+
+			}
+		}
+
+	}
+	
+/*main的css布局jies*/
+
+
+
+
+/*右边固定菜单css样式布局开始*/
+#right-fix{
+	width:36px;
+	height:100%;
+	background: #000;
+	position: fixed;
+	top:0;
+	right:0px;
+	z-index:110;
+
+	.RF-box{
+		width: 100%;
+		height: 100%;
+		#RFB-top{
+			position: absolute;
+			top:21%;
+		    height:41%;
+		    .RFBT-ul{
+		    		
+	    		li{
+	    			
+					padding: 5px 0;
+					&>.iconfont{
+					    position: relative;
+					    display: block;
+					    width: 36px;
+					    font-size: 26px;
+						color: #fff;
+						text-align: center;
+						padding-bottom: 5px;
+						z-index:99;
+						background: #000;
+
+
+
+					}
+
+					&>.title{
+						display: block;
+						width: 100%;
+						font-size: 12px; 
+						color: #fff;
+						font-family: 微软雅黑;
+						text-align: center;
+					}
+					position: relative;
+					.RFBTU1-login{
+						position: absolute;
+						right:36px;
+						top:5px;
+						width:247px;
+						height: 304px;
+						background: #fff;
+					    overflow: hidden;
+					    padding: 0 14px;
+					    border: 1px solid #cecece;
+					    display: none;
+
+					    img{
+						    display: block;
+						    margin: 30px auto 20px;
+						    width: 66px;
+						    height: 66px;
+						    border: 1px solid #fff;
+						    box-shadow: 0 1px 3px #ddd;
+					    }
+
+					    &>p{
+
+					    	padding-bottom: 20px;
+    						text-align: center;
+					    }
+					    .B-top{
+						    clear: both;
+						    overflow: hidden;
+						    margin: 0 -14px;
+						    width: 274px;
+						    padding: 14px 0;
+						    border-top: 1px solid #e5e5e5;
+						    border-bottom: 1px solid #e5e5e5;
+						    background-color: #f8f8f8;
+
+						    .left{
+						    	display: inline-block;
+						    	width: 136px;
+						    	 height: 66px;
+						    	padding-top: 10px;
+						    	text-align: center;
+							    font-size: 9px;
+    							border-right: 1px solid #e5e5e5;
+    							float: left;
+
+    							&>i{
+    								width: 26px;
+								    height: 26px;
+								    margin-bottom: 10px;
+								    margin-left: auto;
+								    margin-right: auto;
+								    display: block;
+								    background: url(../images/top.png)no-repeat -200px -90px;
+								    background-repeat: no-repeat;
+    							}
+						    }
+						    .right{
+						    	float: left;
+							    position: relative;
+							    width: 135px;
+							    height: 66px;
+							    padding-top: 10px;
+							    text-align: center;
+							    font-size: 9px;
+
+							    &>i{
+    								width: 26px;
+								    height: 26px;
+								    margin-bottom: 10px;
+								    margin-left: auto;
+								    margin-right: auto;
+								    display: block;
+								    background: url(../images/top.png)no-repeat -200px -60px;
+								    background-repeat: no-repeat;
+    							}
+						    }
+					    }
+
+					    .B-bottom{
+					    	padding: 12px;
+    						text-align: right;
+    						&>a{
+    							color:#20A0CD;
+    						}
+					    }
+						
+					}
+
+					&:link .RFBTU1-login{
+						transition:all .8s ease-in  .1s;
+						display:none;
+					}
+					&:hover .RFBTU1-login{
+						transition:all .8s ease-in  .1s;
+						display:block;
+					}
+
+					&:hover .iconfont{background: #F10180;}
+
+					.dis{
+						width: 117px;
+						height:29px;
+						line-height: 30px;
+						background: #fff;
+						position: absolute;
+						left:36px;
+						top:5px;
+					    border-radius: 3px 0 0 3px;
+					    background-color: #fff;
+					    border: 1px solid #ddd;
+					    border-right: none;
+					    box-shadow:0px 1px 1px #ccc;
+					    font-size: 14px;
+					    text-align: center;
+					    transition: .3s linear;
+					    z-index:0;
+					}
+					&:hover .dis{
+							left:-117px;
+					}
+
+	    		}
+
+
+	    		.RFBTUL-L2{
+	    			margin: 10px 0;
+	    			width: 100%;
+					height: 148.6px;
+					background: #DF147F;
+
+					&>.L2-box{
+						width: 100%;
+						height: 100%;
+
+						&>.iconfont{
+					    position: relative;
+					    display: block;
+					   	margin-top: 25px;
+    					margin-left: 5px;
+					    width: 24px;
+					    border-top: 1px solid #df147f;
+					    font-size: 24px;
+					    line-height: 18px;
+						color: #fff;
+
+						}
+
+						&>.title{
+							display: block;
+							width: 14px;
+						    line-height: 14px;
+						    word-wrap: break-word;
+						    font-size: 14px;
+							color: #fff;
+							padding: 15px 10px;
+							font-family:微软雅黑;
+						}
+
+						&>.cir{
+							display: block;
+							width: 20px;
+    						height: 20px;
+    						border-radius:50%;
+							text-align: center;
+	    					color: #f10983;
+	    					background: #fff;
+	    					margin: 0 8px;
+	    					font-family: 微软雅黑;
+						}
+					}
+	    		}
+		    }
+		}
+
+		.RFB-bottom{
+			width: 100%;
+			height: 30%;
+			position: absolute;
+			bottom:2%;
+    		ul{
+    			width: 100%;
+    			height: 25%;
+    			position: absolute;
+    			bottom:5%;
+
+    			li{
+					position:relative;
+    				margin-bottom:20px;
+    				.iconfont{
+    					position: relative;
+					    display: block;
+					    width: 36px;
+					    font-size: 26px;
+					    height:33px;
+					  	// margin: 15px 0;
+						color: #fff;
+						text-align: center;
+						// margin-bottom:1%;
+						// padding:3px 0;
+						background: #000;
+						z-index:98;
+						&:hover{background: #DF147F;}
+
+						
+	    			}
+
+
+		    		.dis1{
+		    			display: block;
+						width: 117px;
+						height: 29px;
+						line-height: 29px;
+						background: #fff;
+						position: absolute;
+						left:0px;
+						top: 0px;
+					    border-radius: 3px 0 0 3px;
+					    background-color: #fff;
+					    border: 1px solid #ddd;
+					    border-right: none;
+					    box-shadow:0px 1px 1px #ccc;
+					    font-size: 14px;
+					    text-align: center;
+					    transition: .3s linear;
+					    z-index:0;
+					}
+
+					.dis2{
+		    			display: block;
+						width: 117px;
+						height: 29px;
+						line-height: 29px;
+						background: #fff;
+						position: absolute;
+						left:0px;
+						top:0;
+					    border-radius: 3px 0 0 3px;
+					    background-color: #fff;
+					    border: 1px solid #ddd;
+					    border-right: none;
+					    box-shadow:0px 1px 1px #ccc;
+					    font-size: 14px;
+					    text-align: center;
+					    transition: .3s linear;
+					    z-index:0;
+					}
+
+					&:hover .dis{left:-118px;}
+    			}
+    		}
+
+		}
+	}
+}
+/*右边固定菜单css样式布局结束*/

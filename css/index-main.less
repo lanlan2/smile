@@ -1,0 +1,2050 @@
+
+.box{position: relative;overflow: hidden;}
+/*右边固定菜单css样式布局开始*/
+#right-fix{
+	width:36px;
+	height:100%;
+	background: #000;
+	position: fixed;
+	top:0;
+	right:0px;
+	z-index:110;
+
+	.RF-box{
+		width: 100%;
+		height: 100%;
+		#RFB-top{
+			position: absolute;
+			top:21%;
+		    height:41%;
+		    .RFBT-ul{
+		    		
+	    		li{
+	    			
+					padding: 5px 0;
+					&>.iconfont{
+					    position: relative;
+					    display: block;
+					    width: 36px;
+					    font-size: 26px;
+						color: #fff;
+						text-align: center;
+						padding-bottom: 5px;
+						z-index:99;
+						background: #000;
+
+
+
+					}
+
+					&>.title{
+						display: block;
+						width: 100%;
+						font-size: 12px; 
+						color: #fff;
+						font-family: 微软雅黑;
+						text-align: center;
+					}
+					position: relative;
+					.RFBTU1-login{
+						position: absolute;
+						right:36px;
+						top:5px;
+						width:247px;
+						height: 304px;
+						background: #fff;
+					    overflow: hidden;
+					    padding: 0 14px;
+					    border: 1px solid #cecece;
+					    display: none;
+
+					    img{
+						    display: block;
+						    margin: 30px auto 20px;
+						    width: 66px;
+						    height: 66px;
+						    border: 1px solid #fff;
+						    box-shadow: 0 1px 3px #ddd;
+					    }
+
+					    &>p{
+
+					    	padding-bottom: 20px;
+    						text-align: center;
+					    }
+					    .B-top{
+						    clear: both;
+						    overflow: hidden;
+						    margin: 0 -14px;
+						    width: 274px;
+						    padding: 14px 0;
+						    border-top: 1px solid #e5e5e5;
+						    border-bottom: 1px solid #e5e5e5;
+						    background-color: #f8f8f8;
+
+						    .left{
+						    	display: inline-block;
+						    	width: 136px;
+						    	 height: 66px;
+						    	padding-top: 10px;
+						    	text-align: center;
+							    font-size: 9px;
+    							border-right: 1px solid #e5e5e5;
+    							float: left;
+
+    							&>i{
+    								width: 26px;
+								    height: 26px;
+								    margin-bottom: 10px;
+								    margin-left: auto;
+								    margin-right: auto;
+								    display: block;
+								    background: url(../images/top.png)no-repeat -200px -90px;
+								    background-repeat: no-repeat;
+    							}
+						    }
+						    .right{
+						    	float: left;
+							    position: relative;
+							    width: 135px;
+							    height: 66px;
+							    padding-top: 10px;
+							    text-align: center;
+							    font-size: 9px;
+
+							    &>i{
+    								width: 26px;
+								    height: 26px;
+								    margin-bottom: 10px;
+								    margin-left: auto;
+								    margin-right: auto;
+								    display: block;
+								    background: url(../images/top.png)no-repeat -200px -60px;
+								    background-repeat: no-repeat;
+    							}
+						    }
+					    }
+
+					    .B-bottom{
+					    	padding: 12px;
+    						text-align: right;
+    						&>a{
+    							color:#20A0CD;
+    						}
+					    }
+						
+					}
+
+					&:link .RFBTU1-login{
+						transition:all .8s ease-in  .1s;
+						display:none;
+					}
+					&:hover .RFBTU1-login{
+						transition:all .8s ease-in  .1s;
+						display:block;
+					}
+
+					&:hover .iconfont{background: #F10180;}
+
+					.dis{
+						width: 117px;
+						height:29px;
+						line-height: 30px;
+						background: #fff;
+						position: absolute;
+						left:36px;
+						top:5px;
+					    border-radius: 3px 0 0 3px;
+					    background-color: #fff;
+					    border: 1px solid #ddd;
+					    border-right: none;
+					    box-shadow:0px 1px 1px #ccc;
+					    font-size: 14px;
+					    text-align: center;
+					    transition: .3s linear;
+					    z-index:0;
+					}
+					&:hover .dis{
+							left:-117px;
+					}
+
+	    		}
+
+
+	    		.RFBTUL-L2{
+	    			margin: 10px 0;
+	    			width: 100%;
+					height: 148.6px;
+					background: #DF147F;
+
+					&>.L2-box{
+						width: 100%;
+						height: 100%;
+
+						&>.iconfont{
+					    position: relative;
+					    display: block;
+					    margin-top: 25px;
+					    margin-left: 5px;
+					    width: 24px;
+					    border-top: 1px solid #df147f;
+					    font-size: 24px;
+					    line-height: 18px;
+						color: #fff;
+
+
+						}
+
+						&>.title{
+							display: block;
+							width: 14px;
+						    line-height: 14px;
+						    word-wrap: break-word;
+						    font-size: 14px;
+							color: #fff;
+							padding: 15px 10px;
+							font-family:微软雅黑;
+						}
+
+						&>.cir{
+							display: block;
+							width: 20px;
+    						height: 20px;
+    						border-radius:50%;
+							text-align: center;
+	    					color: #f10983;
+	    					background: #fff;
+	    					margin: 0 8px;
+	    					font-family: 微软雅黑;
+						}
+					}
+	    		}
+		    }
+		}
+
+		.RFB-bottom{
+			width: 100%;
+			height: 30%;
+			position: absolute;
+			bottom:2%;
+    		ul{
+    			width: 100%;
+    			height: 25%;
+    			position: absolute;
+    			bottom:5%;
+
+    			li{
+					position:relative;
+    				margin-bottom:20px;
+    				.iconfont{
+    					position: relative;
+					    display: block;
+					    width: 36px;
+					    font-size: 26px;
+					    height:33px;
+					  	// margin: 15px 0;
+						color: #fff;
+						text-align: center;
+						// margin-bottom:1%;
+						// padding:3px 0;
+						background: #000;
+						z-index:98;
+						&:hover{background: #DF147F;}
+						&>a{display: inline-block;width: 100%;height: 100%;}
+						
+	    			}
+
+
+		    		.dis1{
+		    			display: block;
+						width: 117px;
+						height: 29px;
+						line-height: 29px;
+						background: #fff;
+						position: absolute;
+						left:0px;
+						top: 0px;
+					    border-radius: 3px 0 0 3px;
+					    background-color: #fff;
+					    border: 1px solid #ddd;
+					    border-right: none;
+					    box-shadow:0px 1px 1px #ccc;
+					    font-size: 14px;
+					    text-align: center;
+					    transition: .3s linear;
+					    z-index:0;
+					}
+
+					.dis2{
+		    			display: block;
+						width: 117px;
+						height: 29px;
+						line-height: 29px;
+						background: #fff;
+						position: absolute;
+						left:0px;
+						top:0;
+					    border-radius: 3px 0 0 3px;
+					    background-color: #fff;
+					    border: 1px solid #ddd;
+					    border-right: none;
+					    box-shadow:0px 1px 1px #ccc;
+					    font-size: 14px;
+					    text-align: center;
+					    transition: .3s linear;
+					    z-index:0;
+
+					}
+
+					&:hover .dis{left:-118px;}
+    			}
+    		}
+
+		}
+	}
+}
+/*右边固定菜单css样式布局结束*/
+
+/*main的css样式布局开始*/
+main{
+	position: relative;
+	width: 100%;
+	
+	/*轮播图css的样式布局开始*/
+	.banner{
+		width: 100%;
+		min-width:768px;
+	    position: relative;
+	    _height: 392px;
+    	padding-bottom: 20px;
+    	margin-bottom: 10px;
+			&>img{
+				width: 100%;
+				height: 100%;
+
+				display: block;
+			}
+
+			.MB-box{
+				width: 60%;
+				height: 80%;
+				position: absolute;
+				top: 10%;
+    			left: 20.1%;
+			    box-shadow: 0 1px 0px rgba(167,167,167,.4);
+
+				.MBB-bannerbox{
+					width:95%;
+					height: 90%;
+					position: absolute;
+					top: 0.6%;
+    				left: 2%;
+					overflow: hidden;
+						#box{
+							width: 100%;
+							height: 100%;
+							position: relative;
+								&>img{
+									width:100%;
+									display: block;
+									position: absolute;
+								}
+
+								span{
+								    border-radius: 2px;
+								    display: block;
+								    width: 33px;
+								    height: 66px;
+								    line-height: 66px;
+								    font-size: 24px;
+								    cursor: pointer;
+								    z-index:99;
+								    text-align: center;
+								    -webkit-transition: all .3s ease-in;
+
+								    @font-face {
+								 		 font-family: 'aa';
+								  		src:  url('../images/vipIndexFont.woff') format('woff');
+									}
+									i[class*="font"] {
+									  font-family: aa;
+									  font-style: normal;
+									}
+
+								}
+
+								.btn-left{
+									position: absolute;
+								    top: 40%;
+								    left:-33px;
+								    background: rgba(0,0,0,.2);
+								}
+
+								.btn-right{
+									position: absolute;
+								    top: 40%;
+								    right:-33px;
+								   background: rgba(0,0,0,.2);
+								}
+						}
+						
+				}
+
+				ul{
+					width:70%;
+					height:10%;
+					position: absolute;
+					bottom:0px;
+					left:0px;
+					padding: 0 15%;
+
+					li{
+
+						
+						float: left;
+					    display: inline-block;
+					    width: 33%;
+					    overflow: hidden;
+					    text-overflow: ellipsis;
+					    white-space: nowrap;
+					  	height: 100%;
+					    line-height:100%;
+					    font: 12px/40px 'microsoft Yahei';
+					    color: #666;
+					    cursor: pointer;
+					    border-bottom: transparent 3px solid;
+					    position: relative;
+					    	a{
+					    		display: inline-block;
+					    		 width: 100%;
+					    		 height: 100%;
+					    		 line-height:40px;
+					    		text-align: center;
+					    	}
+
+					    &:after {
+							    content: "|";
+							    font-family: tohama;
+							    font-size: 10px;
+							    margin-left: 10px;
+							    color: #e8e8e8;
+							    position: absolute;
+							    right: 0;
+
+							}
+					}
+
+					.Li{border-bottom:3px solid #E6057D;}
+				}
+			}
+
+	}
+	/*轮播图css的样式布局结束*/
+
+	/*左边固定菜单栏css的样式布局开始*/
+
+	.menu{
+		width: 82px;
+		height: 460px;
+		position: relative;
+		top:20px;
+		left:11%;
+		float: left;
+		border: 1px solid #d6d6d6;
+    	border-radius: 3px;
+    	z-index:99;
+    	.menu-box{
+    		padding: 4px 4px 0;
+    		margin-bottom: 5px;
+
+    		@font-face {
+			  font-family: 'aa';
+			  src:  url('../images/vipIndexFont.woff') format('woff');
+			  
+			}
+
+			span[class*="font"] {
+			  font-family: aa;
+			  font-style: normal;
+			
+			}
+
+    		a{
+    			display: block;
+			    padding: 8px 5px;
+			    height: 21px;
+			    border-bottom: 1px solid #eaeaea;
+			    color: #666;
+			    border-bottom-color: #eaeaea;
+				.font{
+					margin-right: 6px;
+				    width: 20px;
+				    height: 20px;
+				    display: inline-block;
+				    vertical-align: top;
+				    cursor: pointer;
+				    font-size: 22px;
+				    line-height: 20px;
+					
+				}
+				.title{
+					line-height: 20px;
+    				white-space: nowrap;
+    				display: inline-block;
+				    vertical-align: top;
+				    cursor: pointer;
+				    font: 13px/1.5 tahoma,arial;
+				}
+				&:hover{color:#F10180}
+    		}
+
+    		#index-f12{border-bottom:none;}
+    	}
+	}
+
+	/*左边固定菜单栏css的样式布局结束*/
+
+	/*中部内容css的样式布局开始*/
+	.classify-box{
+		min-width: 800px;
+		margin: 0 auto;
+		position: relative;
+		zoom:1;
+		
+			&::after{
+				content:"";
+				display: block;
+				clear:both;
+				visibility: hidden;
+			}
+
+		.choiceness{
+			width:61%;
+		    padding: 15px 0 0;
+		    margin: 0 auto;
+		   	position: relative;
+	    	.choiceness-img{
+	    		overflow: hidden;
+				width:100%;
+				&>img{display: block;}
+			    img{
+			    	 width: 100%;
+			    }
+	    	}
+
+		    .choiceness-box{
+		    	width:100%;
+
+				.CB-div{
+					width: 48%;
+					margin:1%;
+					overflow: hidden;
+					float: left;
+					position: relative;
+
+					img{
+			    		display:block;
+			    		width:98%;
+		    		
+		    		
+	
+						&::after{
+							content:"";
+							display: block;
+							clear:both;
+							visibility: hidden;
+						}
+	    			}
+
+	    			.lo{
+	    				display: block;
+	    				width: 70%;
+	    				height: 35%;
+	    				position: absolute;
+	    				bottom:8%;
+	    				left:14%;
+	    				background: rgba(255,255,255,.9);
+					    border-radius:4px;
+					    line-height: 1.2;
+					    
+						&>img{
+
+							width: 25%;
+						    
+						    margin: 2% 35%;
+						    
+						}
+						&>p{
+							
+							font-size: 14px;
+						    color: #333;
+						    font-weight: 700;
+						    margin: 0 25%;
+						    overflow: hidden;
+						    text-overflow: ellipsis;
+						    white-space: nowrap;
+
+						}
+
+						&>.title4,.title5{
+							 margin: 0 30%;
+						}
+	    			}
+
+	    			.CBD-dis{
+	    				pointer-events: none;
+					    opacity: 0;
+					    width: 90%;
+					    height: 90%;
+					    position: absolute;
+					   top: 5%;
+    					left: 4%;
+					    background-color: #fff;
+					    background-position: center 100px;
+					    border-radius: 4px;
+					    overflow: hidden;
+					    z-index:99;
+
+					    .CBDD-top{
+							    margin-top: 2.5%;
+							    padding-left: 3%;
+							    height: 75%;
+							    border-bottom: 1px dotted #333;
+							   .dity{
+								   width: 28%;
+								   	height: 100%;
+								   	float: left;
+								   	margin-left:3%;
+								   	overflow: hidden;
+								   	img{
+								   	height: 85%;
+								   	background: #f00;
+								   	}
+
+								   	&>.title{
+								   		font-size: 14px;
+    									color: #333;
+    									text-align: center;
+    									font-weight: bold;
+								   	}
+							   	}
+					    }
+
+					    .CBDD-bottom{
+							padding-left: 3%;
+							height: 20.5%;
+
+							&>a{
+								width: 25%;
+								margin-left: 5%;
+								height: 80%;
+								float: left;
+
+								&>img{
+									margin-top:5%;
+									width: 85%;
+									height: 100%;
+								}
+
+								&>.btn1{
+									background: #fff;
+    								border: 1px solid #ededed;
+									width: 80%;
+									height: 50%;
+									margin-top:17%;
+									border-radius:12px;
+					   			 	white-space:nowrap;
+					    			text-overflow:ellipsis;
+									overflow: hidden;
+									@font-face {
+							 		 	font-family: 'aa';
+							  			src:  url('../images/vipFont.woff') format('woff');
+									}
+									i[class*="font"] {
+									  font-family: aa;
+									  font-style: normal;
+									}
+
+									&>.font{color:#F10582;font-size:16px;vertical-align: middle;}
+
+									&>.title{line-height: 25%;color:#919191; font-size:12px;font-family: 微软雅黑;}
+
+									
+								}
+
+								&>p{
+									width: 110%;
+									height: 50%;
+									margin-top: 15%;
+									border: 1px solid #333;
+								    color: #333;
+								    text-align: center;
+								    line-height:25px;
+								    background: #fff;
+								    border-radius: 2px;
+								    font-size: 14px;
+								    cursor: pointer;
+					   			 	white-space:nowrap;
+					    			text-overflow:ellipsis;
+					    			 overflow: hidden;
+								    transition:all .5s ease-in .1s;
+
+								}
+
+
+							}
+
+					    }
+	    			}
+
+				}
+		    	
+		    }
+		}
+		
+		.frock{
+			width: 61%;
+			position: relative;
+		    padding: 15px 0 0;
+		    overflow: hidden;
+		    margin: 0 auto;
+		    	.frock-logobox{
+					width:100%;
+				    min-height: 43px;
+				    border-bottom: 1px #1a1a1a solid;
+				    position: relative;
+				    padding-buttom:-20px;
+				    overflow: hidden;
+				   	margin: 0px auto 15px;
+				   	&>img{display: block;}
+
+				    a{
+				    	position: absolute;
+					    right:5px;
+					    bottom: 5px;
+					    font-size: 12px;
+					    color: #333;
+					    -webkit-tap-highlight-color: rgba(255,255,255,0);
+				    }
+		    	}
+
+		    .frock-box{
+			    	.img{
+			    		width: 46.5%;
+    					margin: 1.5%;
+			    		overflow: hidden;
+			    		position: relative;
+			    		float: left;
+
+			    		.info{
+				    		width: 100%;
+				    		height: 40px;
+				    		float: left;
+				    		background: #000;
+				    		position: relative;
+						    padding: 1% 1.2% 0px 2%;
+						    line-height: 40px;
+						    background-color: #fff;
+						    overflow: hidden;
+
+						    .count{
+						    	color: #4d4d4d;
+							    margin-right: 10px;
+							    overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+							    _width: 100px;
+							    display: inline-block;
+						    	.bg1{
+						    		font-size: 24px;
+								    color: #f10582;
+								    margin-right: 3px;
+								    font-weight: 700;
+						    	}
+						    }
+
+						    .name{
+						    	cursor: pointer;
+							    font-size: 14px;
+							    color: #4d4d4d;
+							    overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+							    width:35%;
+							    display: inline-block;
+						    }
+
+						    .time{
+						    	position: absolute;
+							    right: 7%;
+							    bottom: 0;
+							    padding-top: 0.2%;
+							    padding-bottom: 1.2%;
+							    height: 16px;
+							    line-height: 16px;
+							    color: #4d4d4d;
+							    white-space: nowrap;
+
+							    i{
+							    	display: inline-block;
+							    	margin-right: 5px;
+								    width: 16px;
+								    height: 16px;
+								    vertical-align:middle;
+								    background: url(../images/clock.png) no-repeat -50px 0;
+
+							    }
+						    }
+			    		}
+						
+						img{
+			    			display: block;
+				    		width: 100%;
+
+				    		
+			    		}
+
+
+		    			&>.btn{
+							background: #fff;
+							border: 1px solid #ededed;
+							width: 18%;
+							height: 7%;
+							border-radius:10px;
+							position: absolute;
+							bottom:17%;
+							right:2%;
+							overflow: hidden;
+
+							@font-face {
+					 		 	font-family: 'aa';
+					  			src:  url('../images/vipFont.woff') format('woff');
+							}
+							i[class*="font"] {
+							  font-family: aa;
+							  font-style: normal;
+							}
+
+							&>.font{color:#F10582;font-size:16px;vertical-align: middle;}
+
+							&>.title{line-height: 25%;color:#666; font-size:12px;text-align: center;font-family: 微软雅黑;}
+						}
+				   
+			    	}
+		    	
+		    	}
+		}
+
+		.Shoes{
+
+			width: 61%;
+			position: relative;
+		    padding: 15px 0 0;
+		    overflow: hidden;
+		    margin: 0 auto;
+		    	.Shoes-logobox{
+					width:100%;
+				    min-height: 43px;
+				    border-bottom: 1px #1a1a1a solid;
+				    position: relative;
+				    padding-buttom:-20px;
+				    overflow: hidden;
+				   	margin: 0px auto 15px;
+				   	&>img{display: block;}
+				   
+				    a{
+				    	position: absolute;
+					    right:5px;
+					    bottom: 5px;
+					    font-size: 12px;
+					    color: #333;
+					    -webkit-tap-highlight-color: rgba(255,255,255,0);
+				    }
+		    	}
+
+		    .Shoes-box{
+		    	.img{
+			    		width: 46.5%;
+    					margin: 1.5%;
+			    		overflow: hidden;
+			    		position: relative;
+			    		float: left;
+
+		    			.info{
+				    		width: 100%;
+				    		height: 40px;
+				    		float: left;
+				    		background: #000;
+				    		position: relative;
+						    padding: 1% 1.2% 0px 2%;
+						    line-height: 40px;
+						    background-color: #fff;
+						    overflow: hidden;
+
+						    .count{
+						    	color: #4d4d4d;
+							    margin-right: 10px;
+							    overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+							    _width: 100px;
+							    display: inline-block;
+						    	.bg1{
+						    		font-size: 24px;
+								    color: #f10582;
+								    margin-right: 3px;
+								    font-weight: 700;
+						    	}
+						    }
+
+						    .name{
+						    	cursor: pointer;
+							    font-size: 14px;
+							    color: #4d4d4d;
+							    overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+							    width:35%;
+							    display: inline-block;
+						    }
+
+						    .time{
+						    	position: absolute;
+							    right: 7%;
+							    bottom: 0;
+							    padding-top: 0.2%;
+							    padding-bottom: 1.2%;
+							    height: 16px;
+							    line-height: 16px;
+							    color: #4d4d4d;
+							    white-space: nowrap;
+
+							    i{
+							    	display: inline-block;
+							    	margin-right: 5px;
+								    width: 16px;
+								    height: 16px;
+								    vertical-align:middle;
+								    background: url(../images/clock.png) no-repeat -50px 0;
+
+							    }
+						    }
+			    		}
+			    		img{
+			    			display: block;
+				    		width: 100%;
+				    		
+			    		}
+			    		&>.btn{
+							background: #fff;
+							border: 1px solid #ededed;
+							width: 18%;
+							height: 7%;
+							border-radius:10px;
+							position: absolute;
+							bottom:17%;
+							right:2%;
+							overflow: hidden;
+
+							@font-face {
+					 		 	font-family: 'aa';
+					  			src:  url('../images/vipFont.woff') format('woff');
+							}
+							i[class*="font"] {
+							  font-family: aa;
+							  font-style: normal;
+							}
+
+							&>.font{color:#F10582;font-size:16px;vertical-align: middle;}
+
+							&>.title{line-height: 25%;color:#666; font-size:12px;text-align: center;font-family: 微软雅黑;}
+						}
+
+		    		img{
+			    			display: block;
+				    		width: 100%;
+				    		
+			    		}
+		    	}
+		    	
+		    }
+		}
+		.man{
+
+			width: 61%;
+			position: relative;
+		    padding: 15px 0 0;
+		    overflow: hidden;
+		    margin: 0 auto;
+		    	.man-logobox{
+					width:100%;
+				    min-height: 43px;
+				    border-bottom: 1px #1a1a1a solid;
+					position: relative;
+				    padding-buttom:-20px;
+				    overflow: hidden;
+				   	margin: 0px auto 15px;
+				   	&>img{display: block;}
+
+				    a{
+				    	position: absolute;
+					    right:5px;
+					    bottom: 5px;
+					    font-size: 12px;
+					    color: #333;
+					    -webkit-tap-highlight-color: rgba(255,255,255,0);
+				    }
+		    	}
+
+		      .man-box{
+			    	.img{
+			    		width: 46.5%;
+    					margin: 1.5%;
+			    		overflow: hidden;
+			    		position: relative;
+			    		float: left;
+
+			    			.info{
+				    		width: 100%;
+				    		height: 40px;
+				    		float: left;
+				    		background: #000;
+				    		position: relative;
+						    padding: 1% 1.2% 0px 2%;
+						    line-height: 40px;
+						    background-color: #fff;
+						    overflow: hidden;
+
+						    .count{
+						    	color: #4d4d4d;
+							    margin-right: 10px;
+							    overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+							    _width: 100px;
+							    display: inline-block;
+						    	.bg1{
+						    		font-size: 24px;
+								    color: #f10582;
+								    margin-right: 3px;
+								    font-weight: 700;
+						    	}
+						    }
+
+						    .name{
+						    	cursor: pointer;
+							    font-size: 14px;
+							    color: #4d4d4d;
+							    overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+							    width:35%;
+							    display: inline-block;
+						    }
+
+						    .time{
+						    	position: absolute;
+							    right: 7%;
+							    bottom: 0;
+							    padding-top: 0.2%;
+							    padding-bottom: 1.2%;
+							    height: 16px;
+							    line-height: 16px;
+							    color: #4d4d4d;
+							    white-space: nowrap;
+
+							    i{
+							    	display: inline-block;
+							    	margin-right: 5px;
+								    width: 16px;
+								    height: 16px;
+								    vertical-align:middle;
+								    background: url(../images/clock.png) no-repeat -50px 0;
+
+							    }
+						    }
+			    		}
+
+			    		img{
+			    			display: block;
+				    		width: 100%;
+				    		
+			    		}
+
+			    		&>.btn{
+							background: #fff;
+							border: 1px solid #ededed;
+							width: 18%;
+							height: 7%;
+							border-radius:10px;
+							position: absolute;
+							bottom:17%;
+							right:2%;
+							overflow: hidden;
+
+							@font-face {
+					 		 	font-family: 'aa';
+					  			src:  url('../images/vipFont.woff') format('woff');
+							}
+							i[class*="font"] {
+							  font-family: aa;
+							  font-style: normal;
+							}
+
+							&>.font{color:#F10582;font-size:16px;vertical-align: middle;}
+
+							&>.title{line-height: 25%;color:#666; font-size:12px;text-align: center;font-family: 微软雅黑;}
+						}
+			    	}
+		    	
+		    	}
+		    
+		}
+
+		.exercise{
+
+			width: 61%;
+			position: relative;
+		    padding: 15px 0 0;
+		    overflow: hidden;
+		    margin: 0 auto;
+		    	.exercise-logobox{
+					width:100%;
+				    min-height: 43px;
+				    border-bottom: 1px #1a1a1a solid;
+				    position: relative;
+				    padding-buttom:-20px;
+				    overflow: hidden;
+				   	margin: 0px auto 15px;
+				   	&>img{display: block;}
+				    
+				    a{
+				    	position: absolute;
+					    right:5px;
+					    bottom: 5px;
+					    font-size: 12px;
+					    color: #333;
+					    -webkit-tap-highlight-color: rgba(255,255,255,0);
+				    }
+		    	}
+
+		      .exercise-box{
+			    	.img{
+			    		width: 46.5%;
+    					margin: 1.5%;
+			    		overflow: hidden;
+			    		position: relative;
+
+			    		float: left;
+
+			    			.info{
+					    		width: 100%;
+					    		height: 40px;
+					    		float: left;
+					    		background: #000;
+					    		position: relative;
+							    padding: 1% 1.2% 0px 2%;
+							    line-height: 40px;
+							    background-color: #fff;
+							    overflow: hidden;
+
+							    .count{
+							    	color: #4d4d4d;
+								    margin-right: 10px;
+								    overflow: hidden;
+								    text-overflow: ellipsis;
+								    white-space: nowrap;
+								    _width: 100px;
+								    display: inline-block;
+							    	.bg1{
+							    		font-size: 24px;
+									    color: #f10582;
+									    margin-right: 3px;
+									    font-weight: 700;
+							    	}
+							    }
+
+							    .name{
+							    	cursor: pointer;
+								    font-size: 14px;
+								    color: #4d4d4d;
+								    overflow: hidden;
+								    text-overflow: ellipsis;
+								    white-space: nowrap;
+								    width:35%;
+								    display: inline-block;
+							    }
+
+							    .time{
+							    	position: absolute;
+								    right: 7%;
+								    bottom: 0;
+								    padding-top: 0.2%;
+								    padding-bottom: 1.2%;
+								    height: 16px;
+								    line-height: 16px;
+								    color: #4d4d4d;
+								    white-space: nowrap;
+
+								    i{
+								    	display: inline-block;
+								    	margin-right: 5px;
+									    width: 16px;
+									    height: 16px;
+									    vertical-align:middle;
+									    background: url(../images/clock.png) no-repeat -50px 0;
+
+								    }
+							    }
+			    			}
+
+			    		img{
+			    			display: block;
+				    		width: 100%;
+				    		
+			    		}
+
+			    		&>.btn{
+							background: #fff;
+							border: 1px solid #ededed;
+							width: 18%;
+							height: 7%;
+							border-radius:10px;
+							position: absolute;
+							bottom:17%;
+							right:2%;
+							overflow: hidden;
+
+							@font-face {
+					 		 	font-family: 'aa';
+					  			src:  url('../images/vipFont.woff') format('woff');
+							}
+							i[class*="font"] {
+							  font-family: aa;
+							  font-style: normal;
+							}
+
+							&>.font{color:#F10582;font-size:16px;vertical-align: middle;}
+
+							&>.title{line-height: 25%;color:#666; font-size:12px;text-align: center;font-family: 微软雅黑;}
+						}
+			    	}
+		    	
+		    	}
+		    
+		}
+
+		.decorations{
+
+			width: 61%;
+			position: relative;
+		    padding: 15px 0 0;
+		    overflow: hidden;
+		    margin: 0 auto;
+		    	.decorations-logobox{
+					width:100%;
+				    min-height: 43px;
+				    border-bottom: 1px #1a1a1a solid;
+				    position: relative;
+				    padding-buttom:-20px;
+				    overflow: hidden;
+				   	margin: 0px auto 15px;
+				   	&>img{display: block;}
+				    
+				    &>a{
+				    	position: absolute;
+					    right:5px;
+					    bottom: 5px;
+					    font-size: 12px;
+					    color: #333;
+					    -webkit-tap-highlight-color: rgba(255,255,255,0);
+				    }
+		    	}
+
+		      .decorations-box{
+			    	.img{
+			    		width: 46.5%;
+    					margin: 1.5%;
+			    		overflow: hidden;
+			    		position: relative;
+			    		float: left;
+
+			    		.info{
+				    		width: 100%;
+				    		height: 40px;
+				    		float: left;
+				    		background: #000;
+				    		position: relative;
+						    padding: 1% 1.2% 0px 2%;
+						    line-height: 40px;
+						    background-color: #fff;
+						    overflow: hidden;
+
+						    .count{
+						    	color: #4d4d4d;
+							    margin-right: 10px;
+							    overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+							    _width: 100px;
+							    display: inline-block;
+						    	.bg1{
+						    		font-size: 24px;
+								    color: #f10582;
+								    margin-right: 3px;
+								    font-weight: 700;
+						    	}
+						    }
+
+						    .name{
+						    	cursor: pointer;
+							    font-size: 14px;
+							    color: #4d4d4d;
+							    overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+							    width:35%;
+							    display: inline-block;
+						    }
+
+						    .time{
+						    	position: absolute;
+							    right: 7%;
+							    bottom: 0;
+							    padding-top: 0.2%;
+							    padding-bottom: 1.2%;
+							    height: 16px;
+							    line-height: 16px;
+							    color: #4d4d4d;
+							    white-space: nowrap;
+
+							    i{
+							    	display: inline-block;
+							    	margin-right: 5px;
+								    width: 16px;
+								    height: 16px;
+								    vertical-align:middle;
+								    background: url(../images/clock.png) no-repeat -50px 0;
+
+							    }
+						    }
+			    		}
+
+			    		img{
+			    			display: block;
+				    		width: 100%;
+				    		
+			    		}
+
+			    		&>.btn{
+							background: #fff;
+							border: 1px solid #ededed;
+							width: 18%;
+							height: 7%;
+							border-radius:10px;
+							position: absolute;
+							bottom:17%;
+							right:2%;
+							overflow: hidden;
+
+							@font-face {
+					 		 	font-family: 'aa';
+					  			src:  url('../images/vipFont.woff') format('woff');
+							}
+							i[class*="font"] {
+							  font-family: aa;
+							  font-style: normal;
+							}
+
+							&>.font{color:#F10582;font-size:16px;vertical-align: middle;}
+
+							&>.title{line-height: 25%;color:#666; font-size:12px;text-align: center;font-family: 微软雅黑;}
+						}
+			    	}
+		    	
+		    	}
+		    
+		}
+
+		.makeup{
+
+			width: 61%;
+			position: relative;
+		    padding: 15px 0 0;
+		    overflow: hidden;
+		    margin: 0 auto;
+		    	.makeup-logobox{
+					width:100%;
+				    min-height: 43px;
+				    border-bottom: 1px #1a1a1a solid;
+				    position: relative;
+				    padding-buttom:-20px;
+				    overflow: hidden;
+				   	margin: 0px auto 15px;
+				   	&>img{display: block;}
+				    
+				    a{
+				    	position: absolute;
+					    right:5px;
+					    bottom: 5px;
+					    font-size: 12px;
+					    color: #333;
+					    -webkit-tap-highlight-color: rgba(255,255,255,0);
+				    }
+		    	}
+
+		      .makeup-box{
+			    	.img{
+			    		width: 46.5%;
+    					margin: 1.5%;
+			    		overflow: hidden;
+			    		position: relative;
+			    		float: left;
+
+			    			.info{
+				    		width: 100%;
+				    		height: 40px;
+				    		float: left;
+				    		background: #000;
+				    		position: relative;
+						    padding: 1% 1.2% 0px 2%;
+						    line-height: 40px;
+						    background-color: #fff;
+						    overflow: hidden;
+
+						    .count{
+						    	color: #4d4d4d;
+							    margin-right: 10px;
+							    overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+							    _width: 100px;
+							    display: inline-block;
+						    	.bg1{
+						    		font-size: 24px;
+								    color: #f10582;
+								    margin-right: 3px;
+								    font-weight: 700;
+						    	}
+						    }
+
+						    .name{
+						    	cursor: pointer;
+							    font-size: 14px;
+							    color: #4d4d4d;
+							    overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+							    width:35%;
+							    display: inline-block;
+						    }
+
+						    .time{
+						    	position: absolute;
+							    right: 7%;
+							    bottom: 0;
+							    padding-top: 0.2%;
+							    padding-bottom: 1.2%;
+							    height: 16px;
+							    line-height: 16px;
+							    color: #4d4d4d;
+							    white-space: nowrap;
+
+							    i{
+							    	display: inline-block;
+							    	margin-right: 5px;
+								    width: 16px;
+								    height: 16px;
+								    vertical-align:middle;
+								    background: url(../images/clock.png) no-repeat -50px 0;
+
+							    }
+						    }
+			    		}
+
+			    		img{
+			    			display: block;
+				    		width: 100%;
+				    		
+			    		}
+
+			    		&>.btn{
+							background: #fff;
+							border: 1px solid #ededed;
+							width: 18%;
+							height: 7%;
+							border-radius:10px;
+							position: absolute;
+							bottom:17%;
+							right:2%;
+							overflow: hidden;
+
+							@font-face {
+					 		 	font-family: 'aa';
+					  			src:  url('../images/vipFont.woff') format('woff');
+							}
+							i[class*="font"] {
+							  font-family: aa;
+							  font-style: normal;
+							}
+
+							&>.font{color:#F10582;font-size:16px;vertical-align: middle;}
+
+							&>.title{line-height: 25%;color:#666; font-size:12px;text-align: center;font-family: 微软雅黑;}
+						}
+			    	}
+		    	
+		    	}
+		    
+		}
+
+
+		.infant{
+
+			width: 61%;
+			position: relative;
+		    padding: 15px 0 0;
+		    overflow: hidden;
+		    margin: 0 auto;
+		    	.infant-logobox{
+					width:100%;
+				    min-height: 43px;
+				    border-bottom: 1px #1a1a1a solid;
+				    position: relative;
+				    padding-buttom:-20px;
+				    overflow: hidden;
+				   	margin: 0px auto 15px;
+				   	&>img{display: block;}
+				    
+				    a{
+				    	position: absolute;
+					    right:5px;
+					    bottom: 5px;
+					    font-size: 12px;
+					    color: #333;
+					    -webkit-tap-highlight-color: rgba(255,255,255,0);
+				    }
+		    	}
+
+		      .infant-box{
+			    	.img{
+			    		width: 46.5%;
+    					margin: 1.5%;
+			    		overflow: hidden;
+			    		position: relative;
+			    		float: left;
+
+			    			.info{
+				    		width: 100%;
+				    		height: 40px;
+				    		float: left;
+				    		background: #000;
+				    		position: relative;
+						    padding: 1% 1.2% 0px 2%;
+						    line-height: 40px;
+						    background-color: #fff;
+						    overflow: hidden;
+
+						    .count{
+						    	color: #4d4d4d;
+							    margin-right: 10px;
+							    overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+							    _width: 100px;
+							    display: inline-block;
+						    	.bg1{
+						    		font-size: 24px;
+								    color: #f10582;
+								    margin-right: 3px;
+								    font-weight: 700;
+						    	}
+						    }
+
+						    .name{
+						    	cursor: pointer;
+							    font-size: 14px;
+							    color: #4d4d4d;
+							    overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+							    width:35%;
+							    display: inline-block;
+						    }
+
+						    .time{
+						    	position: absolute;
+							    right: 7%;
+							    bottom: 0;
+							    padding-top: 0.2%;
+							    padding-bottom: 1.2%;
+							    height: 16px;
+							    line-height: 16px;
+							    color: #4d4d4d;
+							    white-space: nowrap;
+
+							    i{
+							    	display: inline-block;
+							    	margin-right: 5px;
+								    width: 16px;
+								    height: 16px;
+								    vertical-align:middle;
+								    background: url(../images/clock.png) no-repeat -50px 0;
+
+							    }
+						    }
+			    		}
+			    		img{
+			    			display: block;
+				    		width: 100%;
+				    		
+			    		}
+			    		&>.btn{
+							background: #fff;
+							border: 1px solid #ededed;
+							width: 18%;
+							height: 7%;
+							border-radius:10px;
+							position: absolute;
+							bottom:17%;
+							right:2%;
+							overflow: hidden;
+
+							@font-face {
+					 		 	font-family: 'aa';
+					  			src:  url('../images/vipFont.woff') format('woff');
+							}
+							i[class*="font"] {
+							  font-family: aa;
+							  font-style: normal;
+							}
+
+							&>.font{color:#F10582;font-size:16px;vertical-align: middle;}
+
+							&>.title{line-height: 25%;color:#666; font-size:12px;text-align: center;font-family: 微软雅黑;}
+						}
+			    	}
+		    	
+		    	}
+		    
+		}
+
+
+		.living{
+
+			width: 61%;
+			position: relative;
+		    padding: 15px 0 0;
+		    overflow: hidden;
+		    margin: 0 auto;
+		    	.living-logobox{
+					width:100%;
+				    min-height: 43px;
+				    border-bottom: 1px #1a1a1a solid;
+				    position: relative;
+				    padding-buttom:-20px;
+				    overflow: hidden;
+				   	margin: 0px auto 15px;
+				   	&>img{display: block;}
+				    
+				    a{
+				    	position: absolute;
+					    right:5px;
+					    bottom: 5px;
+					    font-size: 12px;
+					    color: #333;
+					    -webkit-tap-highlight-color: rgba(255,255,255,0);
+				    }
+		    	}
+
+		      .living-box{
+			    	.img{
+			    		width: 46.5%;
+    					margin: 1.5%;
+			    		overflow: hidden;
+			    		position: relative;
+			    		float: left;
+
+			    			.info{
+				    		width: 100%;
+				    		height: 40px;
+				    		float: left;
+				    		background: #000;
+				    		position: relative;
+						    padding: 1% 1.2% 0px 2%;
+						    line-height: 40px;
+						    background-color: #fff;
+						    overflow: hidden;
+
+						    .count{
+						    	color: #4d4d4d;
+							    margin-right: 10px;
+							    overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+							    _width: 100px;
+							    display: inline-block;
+						    	.bg1{
+						    		font-size: 24px;
+								    color: #f10582;
+								    margin-right: 3px;
+								    font-weight: 700;
+						    	}
+						    }
+
+						    .name{
+						    	cursor: pointer;
+							    font-size: 14px;
+							    color: #4d4d4d;
+							    overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+							    width:35%;
+							    display: inline-block;
+						    }
+
+						    .time{
+						    	position: absolute;
+							    right: 7%;
+							    bottom: 0;
+							    padding-top: 0.2%;
+							    padding-bottom: 1.2%;
+							    height: 16px;
+							    line-height: 16px;
+							    color: #4d4d4d;
+							    white-space: nowrap;
+
+							    i{
+							    	display: inline-block;
+							    	margin-right: 5px;
+								    width: 16px;
+								    height: 16px;
+								    vertical-align:middle;
+								    background: url(../images/clock.png) no-repeat -50px 0;
+
+							    }
+						    }
+			    		}
+			    		img{
+			    			display: block;
+				    		width: 100%;
+				    		
+			    		}
+			    		&>.btn{
+							background: #fff;
+							border: 1px solid #ededed;
+							width: 18%;
+							height: 7%;
+							border-radius:10px;
+							position: absolute;
+							bottom:17%;
+							right:2%;
+							overflow: hidden;
+
+							@font-face {
+					 		 	font-family: 'aa';
+					  			src:  url('../images/vipFont.woff') format('woff');
+							}
+							i[class*="font"] {
+							  font-family: aa;
+							  font-style: normal;
+							}
+
+							&>.font{color:#F10582;font-size:16px;vertical-align: middle;}
+
+							&>.title{line-height: 25%;color:#666; font-size:12px;text-align: center;font-family: 微软雅黑;}
+						}
+			    	}
+		    	
+		    	}
+		    
+		}
+
+		.international{
+
+			width: 61%;
+			position: relative;
+		    padding: 15px 0 0;
+		    overflow: hidden;
+		    margin: 0 auto;
+		    	.international-logobox{
+					width:100%;
+				    min-height: 43px;
+				    border-bottom: 1px #1a1a1a solid;
+				    position: relative;
+				    padding-buttom:-20px;
+				    overflow: hidden;
+				   	margin: 0px auto 15px;
+				   	&>img{display: block;}
+				    
+				    a{
+				    	position: absolute;
+					    right:5px;
+					    bottom: 5px;
+					    font-size: 12px;
+					    color: #333;
+					    -webkit-tap-highlight-color: rgba(255,255,255,0);
+				    }
+		    	}
+
+		      .international-box{
+			    	.img{
+			    		width: 46.5%;
+    					margin: 1.5%;
+			    		overflow: hidden;
+			    		position: relative;
+			    		float: left;
+
+			    			.info{
+				    		width: 100%;
+				    		height: 40px;
+				    		float: left;
+				    		background: #000;
+				    		position: relative;
+						    padding: 1% 1.2% 0px 2%;
+						    line-height: 40px;
+						    background-color: #fff;
+						    overflow: hidden;
+
+						    .count{
+						    	color: #4d4d4d;
+							    margin-right: 10px;
+							    overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+							    _width: 100px;
+							    display: inline-block;
+						    	.bg1{
+						    		font-size: 24px;
+								    color: #f10582;
+								    margin-right: 3px;
+								    font-weight: 700;
+						    	}
+						    }
+
+						    .name{
+						    	cursor: pointer;
+							    font-size: 14px;
+							    color: #4d4d4d;
+							    overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+							    width:35%;
+							    display: inline-block;
+						    }
+
+						    .time{
+						    	position: absolute;
+							    right: 7%;
+							    bottom: 0;
+							    padding-top: 0.2%;
+							    padding-bottom: 1.2%;
+							    height: 16px;
+							    line-height: 16px;
+							    color: #4d4d4d;
+							    white-space: nowrap;
+
+							    i{
+							    	display: inline-block;
+							    	margin-right: 5px;
+								    width: 16px;
+								    height: 16px;
+								    vertical-align:middle;
+								    background: url(../images/clock.png) no-repeat -50px 0;
+
+							    }
+						    }
+			    		}
+
+			    		img{
+			    			display: block;
+				    		width: 100%;
+				    		
+			    		}
+			    		&>.btn{
+							background: #fff;
+							border: 1px solid #ededed;
+							width: 18%;
+							height: 7%;
+							border-radius:10px;
+							position: absolute;
+							bottom:17%;
+							right:2%;
+							overflow: hidden;
+
+							@font-face {
+					 		 	font-family: 'aa';
+					  			src:  url('../images/vipFont.woff') format('woff');
+							}
+							i[class*="font"] {
+							  font-family: aa;
+							  font-style: normal;
+							}
+
+							&>.font{color:#F10582;font-size:16px;vertical-align: middle;}
+
+							&>.title{line-height: 25%;color:#666; font-size:12px;text-align: center;font-family: 微软雅黑;}
+						}
+			    	}
+		    	
+		    	}
+		    
+		}
+		
+		.life{
+
+			width: 61%;
+			position: relative;
+		    padding: 15px 0 0;
+		    overflow: hidden;
+		    margin: 0 auto;
+		    	.life-logobox{
+					width:100%;
+				    min-height: 43px;
+				    border-bottom: 1px #1a1a1a solid;
+				    position: relative;
+				    padding-buttom:-20px;
+				    overflow: hidden;
+				   	margin: 0px auto 15px;
+				    &>img{display: block;}
+				    a{
+				    	position: absolute;
+					    right:5px;
+					    bottom: 5px;
+					    font-size: 12px;
+					    color: #333;
+					    -webkit-tap-highlight-color: rgba(255,255,255,0);
+				    }
+		    	}
+
+		      .life-box{
+			    	.img{
+			    		width: 46.5%;
+    					margin: 1.5%;
+			    		overflow: hidden;
+			    		position: relative;
+			    		float: left;
+
+			    			.info{
+				    		width: 100%;
+				    		height: 40px;
+				    		float: left;
+				    		background: #000;
+				    		position: relative;
+						    padding: 1% 1.2% 0px 2%;
+						    line-height: 40px;
+						    background-color: #fff;
+						    overflow: hidden;
+
+						    .count{
+						    	color: #4d4d4d;
+							    margin-right: 10px;
+							    overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+							    _width: 100px;
+							    display: inline-block;
+						    	.bg1{
+						    		font-size: 24px;
+								    color: #f10582;
+								    margin-right: 3px;
+								    font-weight: 700;
+						    	}
+						    }
+
+						    .name{
+						    	cursor: pointer;
+							    font-size: 14px;
+							    color: #4d4d4d;
+							    overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+							    width:35%;
+							    display: inline-block;
+						    }
+
+						    .time{
+						    	position: absolute;
+							    right: 7%;
+							    bottom: 0;
+							    padding-top: 0.2%;
+							    padding-bottom: 1.2%;
+							    height: 16px;
+							    line-height: 16px;
+							    color: #4d4d4d;
+							    white-space: nowrap;
+
+							    i{
+							    	display: inline-block;
+							    	margin-right: 5px;
+								    width: 16px;
+								    height: 16px;
+								    vertical-align:middle;
+								    background: url(../images/clock.png) no-repeat -50px 0;
+
+							    }
+						    }
+			    		}
+
+			    		img{
+			    			display: block;
+				    		width: 100%;
+				    		
+			    		}
+			    		&>.btn{
+							background: #fff;
+							border: 1px solid #ededed;
+							width: 18%;
+							height: 7%;
+							border-radius:10px;
+							position: absolute;
+							bottom:17%;
+							right:2%;
+							overflow: hidden;
+
+							@font-face {
+					 		 	font-family: 'aa';
+					  			src:  url('../images/vipFont.woff') format('woff');
+							}
+							i[class*="font"] {
+							  font-family: aa;
+							  font-style: normal;
+							}
+
+							&>.font{color:#F10582;font-size:16px;vertical-align: middle;}
+
+							&>.title{line-height: 25%;color:#666; font-size:12px;text-align: center;font-family: 微软雅黑;}
+						}
+			    	}
+		    	
+		    	}
+		    
+		}
+
+		.classify-over{
+			border-top: 1px solid #e8e8e8;
+
+				&>a{
+
+					width: 324px;
+					display: block;
+					color: #fff;
+					height: 44px;
+					font-weight: bold;
+					background-color: #f10180;
+					border-bottom-left-radius: 4px;
+					border-bottom-right-radius: 4px;
+					font-size: 16px;
+					text-align: center;
+					line-height: 44px;
+					margin: -1px auto 20px;
+				}
+		}
+	}
+
+	/*中部内容css的样式布局结束*/
+	
+}
+
+/*main的css样式布局结束*/
+

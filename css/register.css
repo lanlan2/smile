@@ -1,0 +1,336 @@
+body {
+  padding-left: 1%;
+  overflow: hidden;
+}
+body .box {
+  width: 1000px;
+  margin: 40px auto;
+}
+body header {
+  width: 100%;
+  height: 53px;
+  padding-bottom: 44px;
+}
+body header .leftlogo {
+  display: block;
+  float: left;
+  background: url(../images/loginlogo.png) no-repeat 0 0;
+  width: 313px;
+  height: 53px;
+}
+body header .rightimg {
+  display: block;
+  float: right;
+  margin-top: 12.5px;
+  background: url(../images/loginlogo.png) no-repeat -317px 0;
+  width: 445px;
+  height: 28px;
+}
+body main {
+  display: block;
+  background-image: url(../images/loginmain.jpg);
+  height: 600px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+body main .loginform {
+  float: right;
+  width: 274px;
+  padding-top: 40px;
+  padding-right: 100px;
+}
+body main .loginform .LF-top {
+  margin: 0 2px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  zoom: 1;
+  line-height: 16px;
+}
+body main .loginform .LF-top .left {
+  font-size: 12px;
+  float: left;
+}
+body main .loginform .LF-top .right {
+  font-size: 12px;
+  float: right;
+}
+body main .loginform .LF-top .right .color {
+  color: #F43499;
+}
+body main .loginform .LF-top .right .color:hover {
+  border-bottom: 1px solid #F43499;
+}
+body main .loginform .LF-main .form-cell {
+  position: relative;
+  margin-bottom: 25px;
+}
+body main .loginform .LF-main .form-cell .ui-input {
+  width: 250px;
+  padding: 8px 10px;
+  height: 18px;
+  line-height: 18px;
+  font: 14px/20px tahoma, arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #b2b2b2;
+  border-radius: 3px;
+  outline: 0;
+}
+body main .loginform .LF-main .FC-title {
+  height: 25px;
+  line-height: 25px;
+  margin-top: -25px;
+  color: #f20266;
+}
+body main .loginform .LF-main .form-pas {
+  position: relative;
+  margin-bottom: 25px;
+}
+body main .loginform .LF-main .form-pas .ui-input {
+  width: 250px;
+  padding: 8px 10px;
+  height: 18px;
+  line-height: 18px;
+  font: 14px/20px tahoma, arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #b2b2b2;
+  border-radius: 3px;
+  outline: 0;
+}
+body main .loginform .LF-main .form-pas .pascapital {
+  position: absolute;
+  left: 282px;
+  top: 2px;
+  width: 164px;
+  height: 32px;
+  border-color: #91daf2;
+  box-shadow: none;
+  opacity: 0;
+  transition: transform ease-out 0.15s, opacity ease-out 0.15s;
+  border: 1px solid #dbdada;
+  border-radius: 2px;
+}
+body main .loginform .LF-main .form-pas .pascapital p {
+  padding: 6px 16px;
+  font: 12px/18px tahoma, arial, sans-serif;
+  color: #4d4d4d;
+  z-index: 50;
+}
+body main .loginform .LF-main .FP-title {
+  height: 25px;
+  line-height: 25px;
+  margin-top: -25px;
+  color: #f20266;
+}
+body main .loginform .LF-main .form-verifypas {
+  position: relative;
+  margin-bottom: 25px;
+}
+body main .loginform .LF-main .form-verifypas .ui-input {
+  width: 250px;
+  padding: 8px 10px;
+  height: 18px;
+  line-height: 18px;
+  font: 14px/20px tahoma, arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #b2b2b2;
+  border-radius: 3px;
+  outline: 0;
+}
+body main .loginform .LF-main .form-verifypas .pascapital {
+  position: absolute;
+  left: 282px;
+  top: 2px;
+  width: 164px;
+  height: 32px;
+  border-color: #91daf2;
+  box-shadow: none;
+  opacity: 0;
+  transition: transform ease-out 0.15s, opacity ease-out 0.15s;
+  border: 1px solid #dbdada;
+  border-radius: 2px;
+}
+body main .loginform .LF-main .form-verifypas .pascapital p {
+  padding: 6px 16px;
+  font: 12px/18px tahoma, arial, sans-serif;
+  color: #4d4d4d;
+  z-index: 50;
+}
+body main .loginform .LF-main .FP-verifypastitle {
+  height: 25px;
+  line-height: 25px;
+  margin-top: -25px;
+  color: #f20266;
+}
+body main .loginform .LF-main .form-verification {
+  position: relative;
+  margin-bottom: 25px;
+}
+body main .loginform .LF-main .form-verification > input {
+  width: 118px;
+  height: 18px;
+  line-height: 18px;
+  padding: 6px 10px;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #b2b2b2;
+  border-radius: 3px;
+  outline: 0;
+  float: left;
+}
+body main .loginform .LF-main .form-verification > a {
+  margin-left: 13px;
+  font-size: 12px;
+  padding: 0 12px;
+  width: 93px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 3px;
+  border: 1px solid #d0d0d0;
+  color: #999;
+  background: #d0d0d0;
+  cursor: not-allowed;
+  text-decoration: none;
+  text-align: center;
+  float: right;
+}
+body main .loginform .LF-main .Fv-verification {
+  height: 25px;
+  line-height: 25px;
+  margin-top: -25px;
+  color: #f20266;
+}
+body main .loginform .LF-main .FS-submit {
+  margin-bottom: 25px;
+}
+body main .loginform .LF-main .FS-submit > .ui-btn-large {
+  font-family: "Arial, tahoma, sans-serif";
+  font-size: 16px;
+  width: 140px;
+  height: 40px;
+  background: #F21A8C;
+  line-height: 40px;
+  float: left;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  outline: none;
+}
+body main .loginform .LF-main .FS-submit > a {
+  margin: 22px 0 0 35px;
+  padding-right: 16px;
+  display: inline-block;
+  color: #1d94d1;
+  height: 12px;
+  font-size: 12px;
+  text-decoration: none;
+  background: url(../images/git.png) no-repeat right center;
+  float: right;
+}
+body main .loginform .LF-main .FC-checkbox {
+  margin-bottom: 50px;
+}
+body main .loginform .LF-main .FC-checkbox .FC-left {
+  float: left;
+  font-size: 12px;
+  color: #333;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+body main .loginform .LF-main .FC-checkbox .FC-left input {
+  vertical-align: -2px;
+  margin-right: 3px;
+}
+body main .loginform .LF-main .FC-checkbox .color {
+  color: #FF0000;
+  font-size: 12px;
+  vertical-align: top;
+}
+body main .loginform .LF-main .FI-img .FI-title {
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #666;
+}
+body main .loginform .LF-main .FI-img .FI-img-clearfix a {
+  width: 24px;
+  height: 24px;
+  float: left;
+  _display: inline;
+  margin-right: 8px;
+  font-size: 12px;
+  background-image: url(../images/loginlogo.png);
+  background-position: 0 0;
+  vertical-align: top;
+}
+body main .loginform .LF-main .FI-img .FI-img-clearfix .FI-img1 {
+  background-position: -291px -57px;
+}
+body main .loginform .LF-main .FI-img .FI-img-clearfix .FI-img1:hover {
+  background-position: -263px -57px;
+}
+body main .loginform .LF-main .FI-img .FI-img-clearfix .FI-img2 {
+  background-position: -235px -57px;
+}
+body main .loginform .LF-main .FI-img .FI-img-clearfix .FI-img2:hover {
+  background-position: -347px -57px;
+}
+body main .loginform .LF-main .FI-img .FI-img-clearfix .FI-img3 {
+  background-position: -179px -57px;
+}
+body main .loginform .LF-main .FI-img .FI-img-clearfix .FI-img3:hover {
+  background-position: -151px -57px;
+}
+body main .loginform .LF-main .FI-img .FI-img-clearfix .FI-img4 {
+  background-position: -207px -57px;
+}
+body main .loginform .LF-main .FI-img .FI-img-clearfix .FI-img4:hover {
+  background-position: -319px -57px;
+}
+body main .loginform .LF-main .FI-img .FI-img-clearfix .FI-dis {
+  background-image: none;
+  padding: 5px 0;
+  width: 34px;
+  font-size: 12px;
+}
+body main .loginform .LF-main .FI-img .FI-img-clearfix .FI-dis:hover {
+  color: #f10180;
+}
+body main .loginform .LF-main .FI-img .FI-img-clearfix .FI-dis:hover .arrow {
+  border-color: #f10180 transparent transparent transparent;
+}
+body main .loginform .LF-main .FI-img .FI-img-clearfix .FI-dis > .arrow {
+  display: inline-block;
+  font-size: 0;
+  height: 0;
+  overflow: hidden;
+  border-width: 4px;
+  border-style: solid dashed dashed dashed;
+  border-color: #666 transparent transparent transparent;
+  vertical-align: -2px;
+  margin-left: 2px;
+}
+body main .loginform .LF-main .FI-img .dis-block {
+  opacity: 0;
+  padding-top: 15px;
+  transition: .36s;
+  font-size: 12px;
+}
+body main .loginform .LF-main .FI-img .dis-block a {
+  display: inline-block;
+  width: 63px;
+  margin-bottom: 10px;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 12px;
+}
+body main .loginform .LF-main .FI-img .dis-block a:hover {
+  color: #f10180;
+}
+body footer .footer-title {
+  color: #767074;
+  text-align: center;
+  font-size: 12px;
+}

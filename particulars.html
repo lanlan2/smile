@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="css/init.css">
+	<link rel="stylesheet" href="css/header&footer.css">
+	<link rel="stylesheet" href="css/particulars-mian.css">
+	<link rel="stylesheet" href="css/font.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/particulars.js"></script>
+	<script>
+		var iWidth = document.documentElement.clientWidth/16;  /* 业界常用比值 */
+
+		// alert(iWidth);
+
+		document.getElementsByTagName('html')[0].style.fontSize = iWidth + 'px';
+
+	</script>
+</head>
+<body>
+	<!-- 容器 -->
+	<div class="box">
+		<!-- 头部布局开始 -->
+		<header>
+			<section class="head-top">
+				<!-- 头部的top容器 -->
+				<div class="HTbox">
+				
+					<!-- 选区 -->
+					<div class="HTBsel">
+						<i class="HTBSB-border"></i>
+						<div class="HTBS-btn">
+							<span id="HTBSB-celect">广东</span>
+							<i class="HTBSB-dis"></i>
+							
+						</div>
+						<!-- 选区容器 -->
+						<div class="HTBS-box">
+							<!-- 选区内容 -->
+							<div class="HTBSB-inner">
+								<!-- 城市下拉表格标题 -->
+								<p class="sel-tit">请选择所在的收货地区</p>
+								<!-- 城市下拉表格 -->
+								<table class="sel-table">
+									<tr>
+										<th>A</th>
+										<td><span>安徽</span><span>澳门</span></td>
+									</tr>
+									<tr>
+										<th>B</th>
+										<td><span>北京</span></td>
+									</tr>
+									<tr>
+										<th>C</th>
+										<td><span>重庆</span></td>
+									</tr>
+									<tr>
+										<th>F</th>
+										<td><span>福建</span></td>
+									</tr>
+									<tr>
+										<th>G</th>
+										<td>
+											<span>广东</span>
+											<span>广西</span>
+											<span>贵州</span>
+											<span>甘肃</span>
+										</td>
+									</tr>
+									<tr>
+										<th>H</th>
+										<td>
+											<span>河北</span>
+											<span>河南</span>
+											<span>黑龙江</span>
+											<span>海南</span>
+											<span>湖北</span>
+											<span>湖南</span>
+										</td>
+									</tr>
+									<tr>
+										<th>J</th>
+										<td>
+											<span>江苏</span>
+											<span>吉林</span>
+											<span>江西</span>
+										</td>
+									</tr>
+									<tr>
+										<th>L</th>
+										<td><span>辽宁</span></td>
+									</tr>
+									<tr>
+										<th>N</th>
+										<td>
+											<span>内蒙古</span>
+											<span>宁夏</span>
+										</td>
+									</tr>
+									<tr>
+										<th>Q</th>
+										<td><span>青海</span></td>
+									</tr>
+									<tr>
+										<th>S</th>
+										<td>
+											<span>上海</span>
+											<span>山东</span>
+											<span>山西</span>
+											<span>四川</span>
+											<span>陕西</span>
+										</td>
+									</tr>
+									<tr>
+										<th>T</th>
+										<td>
+											<span>台湾</span>
+											<span>天津</span>
+										</td>
+									</tr>
+									<tr>
+										<th>X</th>
+										<td>
+											<span>西藏</span>
+											<span>香港</span>
+											<span>新疆</span>
+										</td>
+									</tr>
+									<tr>
+										<th>Y</th>
+										<td><span>云南</span></td>
+									</tr>
+									<tr>
+										<th>Z</th>
+										<td><span>浙江</span></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- 头部top菜单栏 -->
+					<ul class="HTBtool clearfix">
+						<li class="HTBTL1">
+							<a href="">请登录</a>
+							<div class="HTBTL1-dis">
+									<p class="border"></p>
+									<div class="HTBTWD-top">
+										<span class="HTBTWDT-img"></span>
+										<span class="HTBTWDT-font">您好！ [请登录]</span>
+									</div>
+									<div class="HTBTWD-bottom">
+										<ul class="HTBTWDB-left" >
+
+											<li>我的收藏</li>
+											<li>唯品钱包</li>
+											<li>我的唯品币 </li>
+										</ul>
+										<ul class="HTBTWDB-right">
+											<li>我的订单</li>
+											<li>我的优惠券</li>
+											<li>唯品金融</li>
+										</ul>
+									</div>
+							</div>
+						</li>
+							
+						<li><a href="">注册</a></li>
+						<li><a href="">我的订单</a></li>
+						<li class="HTBTL4">
+							<a href="">我的收藏</a>
+							<i class="HTBtool-dis"></i>
+							<div class="HTBTL4-dis">
+								<p class="border"></p>
+								<span>收藏的品牌(0)</span>
+								<span>收藏的商品(0)</span>
+							</div>
+						</li>
+						<li class="HTBTL5">
+							<a href="">会员俱乐部</a>
+							<i class="HTBtool-dis"></i>
+							<div class="HTBTL5-dis">
+								<p class="border"></p>
+								<ul>
+									<li>俱乐部首页</li>
+									<li>唯品币兑换</li>
+									<li>免费抽大奖</li>
+							</div>
+
+						</li>
+						<li class="HTBTL6">
+							<a href="">客户服务&nbsp;&nbsp;&nbsp;</a>
+							<i class="HTBtool-dis"></i>
+							<div class="HTBTL6-dis">
+								<p class="border"></p>
+								<ul>
+									<li>联系客服</li>
+									<li>帮助中心</li>
+									<li>服务中心</li>
+									<li>知识产权投诉</li>
+							</div>
+						</li>
+						<li class="HTBTL7">
+							<a href="">手机版</a>
+							<div class="HTBTL7-dis">
+								<p class="border"></p>
+								<img src="./images/sm.jpg" alt="">
+								<h2>随时逛 及时抢</h2>
+							</div>
+						</li>
+						<li class="HTBTL8">
+							<a href=""> 更多</a>
+							<i class="HTBtool-dis"></i>
+							<div class="HTBTL8-dis">
+								<p class="border"></p>
+								<div class="top">
+									<h5>合作专区</h5>
+									<p>
+										<span>联名卡申请</span>
+										<span>唯品卡</span>
+										<span>支付专区</span>
+									</p>
+								</div>
+								<div class="buttom">
+									<h5>关于我们</h5>
+									<p>
+										<span>Sell on vip</span>
+										<span>品牌招商</span>
+										<span>官方博客</span>
+									</p>
+								</div>
+								
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</section>
+
+			<section class="head-main">
+				<div class="HM-box">
+					<div class="HMB-left"><img src="./images/logo.png" alt=""></div>
+					<div class="HMB-right">
+						<div class="HMBR-D1"><a href="javacript:void(0)"><img src="./images/tm-img1.png" alt=""></a></div>
+						<div class="HMBR-D2"><a href="javacript:void(0)"><img src="./images/tm-img2.png" alt=""></a></div>
+						<div class="HMBR-D3"><a href="javacript:void(0)"><img src="./images/tm-img3.png" alt=""></a></div>
+						<div class="HMBR-D4">
+							<div class="HMBRD4-box">
+								<i class="bag"title="查看我的购物袋"></i>
+								<span>我的购物袋</span>
+								<p>0</p>
+								<div class="HMBRD4D-dis">
+									<i class="border"></i>
+									<span>你的购物袋还没有商品，再去逛逛吧~</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<nav id="nav">
+				<div class="N-box">
+					<ul class="NB-U1 clearfix">
+						<li class="L1"><a href="javacript:void(0)">首页</a></li>
+						<li><a href="javacript:void(0)">唯品国际</a></li>
+						<li><a href="javacript:void(0)">母婴</a></li>
+						<li><a href="javacript:void(0)">家居家电</a></li>
+						<li><a href="javacript:void(0)">男士</a></li>
+						<li><a href="javacript:void(0)">美妆</a></li>
+						<li><a href="javacript:void(0)">生活</a></li>
+						<li><a href="javacript:void(0)">金融</a></li>
+						<li class="NBRU-L9">
+							<a href="javacript:void(0)">更多<i></i></a>
+							<div class="NBRUL9-dis">
+								<a href="javascript:void(0)">
+									<img src="./images/nav1.jpg" alt="" id="shade">
+									<div class="shade-box">
+										<p class="shade">女装</p>
+									</div>
+								</a>
+
+								<a href="javascript:void(0)">
+									<img src="./images/nav2.jpg" alt="">
+									<div class="shade-box">
+										<p class="shade">鞋包</p>
+									</div>
+								</a>
+								<a href="javascript:void(0)">
+									<img src="./images/nav3.jpg" alt="">
+									<div class="shade-box">
+										<p class="shade">配饰</p>
+									</div>
+								</a>
+								<a href="javascript:void(0)">
+									<img src="./images/nav4.jpg" alt="">
+									<div class="shade-box">
+										<p class="shade">运动</p>
+									</div>
+								</a>
+								<a href="javascript:void(0)" >
+									<img src="./images/nav5.jpg" alt="">
+									<div class="shade-box">
+										<p class="shade">爱丽奢</p>
+									</div>
+								</a>
+							</div>
+						</li>
+					</ul>
+					<ul class="NB-U2">
+						<li>
+						<a href=""><img src="./images/navsou.png" alt=""><span>分类</span></a>
+						</li>
+						<li>
+						<a href=""><img src="./images/nav2.png" alt="">预告</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!-- 头部布局结束 -->
+
+
+		<!-- mian布局开始 -->
+		<main>
+			<div class="M-box">
+				<section class="MB-product clearfix">
+					<div class="MBP-top-litpronav">
+						<a href="./index.html">首页&nbsp;>&nbsp;</a>
+						<a href="javascript:void(0)">英国Vivienne Westwood手表专场&nbsp;>&nbsp;</a>
+						<a href="javascript:void(0)">Vivienne Westwood经典时尚石英女表</a>
+					</div>
+					<div class="MBP-left-img">
+						<div class="MBPLI-big-img"><img src="./images/particulars1.jpg" alt=""id="bin-img"></div>
+						<div id="magnification"><img src="./images/particulars1.jpg" alt=""id="bin-img"></div>
+						<div id="masking"></div>
+						<div class="MBPLI-little-img">
+							<ul class="UL-img">
+								<li><img src="./images/particulars1.jpg" alt=""></li>
+								<li><img src="./images/particulars2.jpg" alt=""></li>
+								<li><img src="./images/particulars3.jpg" alt=""></li>
+								<li><img src="./images/particulars4.jpg" alt=""></li>
+								<li><img src="./images/particulars5.jpg" alt=""></li>
+								<li><img src="./images/particulars6.jpg" alt=""></li>
+							</ul>
+						</div>
+					</div>
+					<div class="MBP-right-product-info clearfix">
+						<div class="MBPR-top-title">
+							<p class="top-title">Vivienne Westwood</p>
+							<p class="bottom-title">Vivienne Westwood经典时尚石英女表</p>
+						</div>
+						<div class="MBPR-com-price">
+							<div class="MBPRC-main1">
+								<span class="span-left">
+									<i>¥</i>
+									<em class="J-price">1398</em>
+								</span>
+								<div class="MBPRCP-right">
+									<span class="MBPRCPR-span1">5.3折</span>
+									<span class="MBPRCPR-span2">¥<del class="span2-Price">2620</del></span>
+								</div>
+							</div>
+							<div class="MBPRC-main2">
+								<div class="MBPRC-main2-top">
+									<dl class="i-freight clearfix" id="J_freight_frame">
+	                    				<dt class="freight-name">运费</dt>
+	                          			  <dd class="freight-con" id="J_freightTip_wrap">
+	                                		<span id="J-fare"><em class="freight-free">免运费</em></span>
+	                                		<span>（订单满288免运费）</span>
+	                       			</dd>
+	                                </dl>
+                                </div>
+                                <div class="MBPRC-main2-bottom">
+                                	<div class="MBPRCM2B-header">
+                                		<h2 class="head-name">此商品暂时还无法购买, 您可能还喜欢<span><5/5></span></h2>
+                                	</div>
+                                	<div class="MBPRCMB-box">
+                                		<button class="btn1 iconfont" id="MBPRCMB-box-btn1">&#xe63c;</button>
+                                		<button class="btn2 iconfont" id="MBPRCMB-box-btn2">&#xe605;</button>
+                                		<div class="MBPRCMBB-bigbox">
+                                			<ul id="MBPRCMBB-bigbox-UL1">
+                                				<ol>
+                                					<li><img src="./images/little-banner1.jpg" alt=""></li>
+                                					<li>经典时尚石英女表</li>
+                                					<li>
+                                						<span class="price-vipshop">¥338</span>
+                                						<span class="price-agio">(2.7折)</span>
+                                						<span class="price-market">¥1259</span>
+                                					</li>
+                                				</ol>
+                                				<ol>
+                                					<li><img src="./images/little-banner2.jpg" alt=""></li>
+                                					<li>经典时尚石英女表</li>
+                                					<li>
+                                						<span class="price-vipshop">¥338</span>
+                                						<span class="price-agio">(2.7折)</span>
+                                						<span class="price-market">¥1259</span>
+                                					</li>
+                                				</ol>
+                                				<ol>
+                                					<li><img src="./images/little-banner3.jpg" alt=""></li>
+                                					<li>经典时尚石英女表</li>
+                                					<li>
+                                						<span class="price-vipshop">¥338</span>
+                                						<span class="price-agio">(2.7折)</span>
+                                						<span class="price-market">¥1259</span>
+                                					</li>
+                                				</ol>
+                                				<ol>
+                                					<li><img src="./images/little-banner4.jpg" alt=""></li>
+                                					<li>经典时尚石英女表</li>
+                                					<li>
+                                						<span class="price-vipshop">¥338</span>
+                                						<span class="price-agio">(2.7折)</span>
+                                						<span class="price-market">¥1259</span>
+                                					</li>
+                                				</ol>
+                                			</ul> 
+                                			<ul>
+                                				<ol>
+                                					<li><img src="./images/little-banner5.jpg" alt=""></li>
+                                					<li>经典时尚石英女表</li>
+                                					<li>
+                                						<span class="price-vipshop">¥338</span>
+                                						<span class="price-agio">(2.7折)</span>
+                                						<span class="price-market">¥1259</span>
+                                					</li>
+                                				</ol>
+                                				<ol>
+                                					<li><img src="./images/little-banner6.jpg" alt=""></li>
+                                					<li>经典时尚石英女表</li>
+                                					<li>
+                                						<span class="price-vipshop">¥338</span>
+                                						<span class="price-agio">(2.7折)</span>
+                                						<span class="price-market">¥1259</span>
+                                					</li>
+                                				</ol>
+                                				<ol>
+                                					<li><img src="./images/little-banner7.jpg" alt=""></li>
+                                					<li>经典时尚石英女表</li>
+                                					<li>
+                                						<span class="price-vipshop">¥338</span>
+                                						<span class="price-agio">(2.7折)</span>
+                                						<span class="price-market">¥1259</span>
+                                					</li>
+                                				</ol>
+                                				<ol>
+                                					<li><img src="./images/little-banner8.jpg" alt=""></li>
+                                					<li>经典时尚石英女表</li>
+                                					<li>
+                                						<span class="price-vipshop">¥338</span>
+                                						<span class="price-agio">(2.7折)</span>
+                                						<span class="price-market">¥1259</span>
+                                					</li>
+                                				</ol>
+                                			</ul>
+                                			<ul>
+                                				<ol>
+                                					<li><img src="./images/little-banner1.jpg" alt=""></li>
+                                					<li>经典时尚石英女表</li>
+                                					<li>
+                                						<span class="price-vipshop">¥338</span>
+                                						<span class="price-agio">(2.7折)</span>
+                                						<span class="price-market">¥1259</span>
+                                					</li>
+                                				</ol>
+                                				<ol>
+                                					<li><img src="./images/little-banner2.jpg" alt=""></li>
+                                					<li>经典时尚石英女表</li>
+                                					<li>
+                                						<span class="price-vipshop">¥338</span>
+                                						<span class="price-agio">(2.7折)</span>
+                                						<span class="price-market">¥1259</span>
+                                					</li>
+                                				</ol>
+                                				<ol>
+                                					<li><img src="./images/little-banner3.jpg" alt=""></li>
+                                					<li>经典时尚石英女表</li>
+                                					<li>
+                                						<span class="price-vipshop">¥338</span>
+                                						<span class="price-agio">(2.7折)</span>
+                                						<span class="price-market">¥1259</span>
+                                					</li>
+                                				</ol>
+                                				<ol>
+                                					<li><img src="./images/little-banner4.jpg" alt=""></li>
+                                					<li>经典时尚石英女表</li>
+                                					<li>
+                                						<span class="price-vipshop">¥338</span>
+                                						<span class="price-agio">(2.7折)</span>
+                                						<span class="price-market">¥1259</span>
+                                					</li>
+                                				</ol>
+                                			</ul>
+                                			<ul id="MBPRCMBB-bigbox-UL4">
+                                				<ol>
+                                					<li><img src="./images/little-banner5.jpg" alt=""></li>
+                                					<li>经典时尚石英女表</li>
+                                					<li>
+                                						<span class="price-vipshop">¥338</span>
+                                						<span class="price-agio">(2.7折)</span>
+                                						<span class="price-market">¥1259</span>
+                                					</li>
+                                				</ol>
+                                				<ol>
+                                					<li><img src="./images/little-banner6.jpg" alt=""></li>
+                                					<li>经典时尚石英女表</li>
+                                					<li>
+                                						<span class="price-vipshop">¥338</span>
+                                						<span class="price-agio">(2.7折)</span>
+                                						<span class="price-market">¥1259</span>
+                                					</li>
+                                				</ol>
+                                				<ol>
+                                					<li><img src="./images/little-banner7.jpg" alt=""></li>
+                                					<li>经典时尚石英女表</li>
+                                					<li>
+                                						<span class="price-vipshop">¥338</span>
+                                						<span class="price-agio">(2.7折)</span>
+                                						<span class="price-market">¥1259</span>
+                                					</li>
+                                				</ol>
+                                				<ol>
+                                					<li><img src="./images/little-banner8.jpg" alt=""></li>
+                                					<li>经典时尚石英女表</li>
+                                					<li>
+                                						<span class="price-vipshop">¥338</span>
+                                						<span class="price-agio">(2.7折)</span>
+                                						<span class="price-market">¥1259</span>
+                                					</li>
+                                				</ol>
+                                			</ul>
+                                		</div>
+                                	</div>
+                                </div>
+                              
+							</div>
+							<div class="MBPRC-bottom">
+								<div class="box">
+									<ul class="pi-promise-list new-guest clearfix">
+								        <li class="pi-promise-item1">
+								        	<i class="pi-promise-icon item-7day"></i><a class="J_freight_free" href="//help.vip.com/commitment.php" target="_blank">商品放心挑</a>
+								        </li>
+								        <li class="pi-promise-item item-empty"><a class="J_freight_free" href="//help.vip.com/commitment.php" target="_blank">唯品会七天内无理由放心退（返运费）</a></li>
+								    </ul>
+								</div>
+							</div>
+						</div>
+						<div class="MBPR-com-joinping"></div>
+						<div class="MBPR-com-guarantee"></div>
+					</div>
+				</section>
+				
+				<!-- 产品结构说明布局开始 -->
+				<section class="MB-product-mix">
+					<div class="MBPX-product-mix">
+						<div class="MBPX-PM-box">
+							<div class="MBPXPMB-top">
+								<ul class="dt-list">
+						            <li class="dt-item"><a href="javascript:void(0);" data-scroll="J-FW-detail" class="dt-list-item J-topbar-tabs" mars_sead="m_te_goods_tab_goodsinfo">商品详情</a></li>
+
+				                        
+				                    <li class="dt-item"><a href="javascript:void(0);" data-scroll="J-FW-recomBox" class="dt-list-item J-topbar-tabs" mars_sead="m_te_goods_tab_recom">商品推荐</a></li>
+				                    <li class="dt-item"><a href="javascript:void(0);" data-scroll="J-FW-question" class="dt-list-item J-topbar-tabs" mars_sead="m_te_goods_tab_QA">商品咨询</a></li>
+
+				            		<li class="dt-item"><a href="javascript:void(0);" data-scroll="J-FW-aboutUs" class="dt-list-item J-topbar-tabs" mars_sead="m_te_goods_tab_about">关于我们</a></li>
+                   			 	</ul>
+							</div>
+							<div class="MBPXPMB-bottom">
+								<div class="J-dc-tit-new dc-tit-new" >
+									<i class="dc-tit-new-icon"></i>
+									<p class="dc-title">商品参数
+										<i class="dc-title-en">DETAIL</i>
+									</p>
+								</div>
+								<div class="dc-info clearfix">
+									<table class="dc-table fst">
+										<tbody>
+											<tr>
+												<td class="dc-table-tit">品牌名称：</td>
+												<td>Vivienne Westwood</td>
+
+
+												<td class="dc-table-tit">商品名称：</td>
+												<td>Vivienne Westwood经典时尚石英女表</td>
+											</tr>
+											<tr>
+												<td class="dc-table-tit">商品分类：</td>
+												<td>女士石英</td>
+
+
+												<td class="dc-table-tit">产地：</td>
+												<td>其它国家</td>
+
+											</tr>
+											<tr>
+												<td class="dc-table-tit">表镜材质：</td>
+												<td>矿物质玻璃</td>
+
+
+												<td class="dc-table-tit">表带材质：</td>
+												<td>皮带</td>
+
+											</tr>
+											<tr>
+												<td class="dc-table-tit">流行元素：</td>
+												<td>纯色</td>
+
+
+												<td class="dc-table-tit">风格：</td>
+												<td>时尚</td>
+
+											</tr>
+											<tr>
+												<td class="dc-table-tit">表底：</td>
+												<td>不透明</td>
+
+
+												<td class="dc-table-tit">表壳材质：</td>
+												<td>钢</td>
+
+											</tr>
+											<tr>
+												<td class="dc-table-tit">配件/备注：</td>
+												<td>包装清单：包装*1；说明书*1；商品*1</td>
+												<td class="dc-table-tit">商品编号：</td>
+												<td>DFVV090GDBK</td>
+
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="J-dc-tit-new dc-tit-new" >
+									<i class="dc-tit-new-icon"></i>
+									<p class="dc-title">商品展示
+										<i class="dc-title-en">IMAGE</i>
+									</p>
+								</div>
+								<div class="MBPXPMBB-img">
+									<div class="dc-img-detail">
+                        				<div class="img-6xx-bg">
+							                <img src="./images/4ff3ab48-1615-4de2-b766-c9cdffb6b544.jpg" class="J-mer-bigImg" data-original="//a.vpimg3.com/upload/merchandise/pdcvis/2017/01/09/190/4ff3ab48-1615-4de2-b766-c9cdffb6b544.jpg" style="display: inline;">
+							            </div>
+							            <div class="img-6xx-bg">
+							                <img src="./images/e4119c40-c516-4de4-afec-af2160bafb46.jpg" class="J-mer-bigImg" data-original="//a.vpimg3.com/upload/merchandise/pdcvis/2017/01/09/54/e4119c40-c516-4de4-afec-af2160bafb46.jpg" style="display: inline;">
+							            </div>
+							            <div class="img-6xx-bg">
+							                <img src="./images/64456774-300a-4dba-8b21-fe4c4cbc379f.jpg" class="J-mer-bigImg" data-original="//a.vpimg3.com/upload/merchandise/pdcvis/2017/01/09/185/64456774-300a-4dba-8b21-fe4c4cbc379f.jpg" style="display: inline;">
+							            </div>
+							            <div class="img-6xx-bg">
+							                <img src="./images/503a0cd8-6a3c-475e-91ad-9e1960ef4b2c.jpg" class="J-mer-bigImg" data-original="//a.vpimg3.com/upload/merchandise/pdcvis/2017/01/09/40/503a0cd8-6a3c-475e-91ad-9e1960ef4b2c.jpg" style="display: inline;">
+							            </div>
+							            <div class="img-6xx-bg">
+							                <img src="./images/8ce9b122-524b-459c-ad88-45aecf9f4d06.jpg" class="J-mer-bigImg" data-original="//a.vpimg3.com/upload/merchandise/pdcvis/2017/01/09/137/8ce9b122-524b-459c-ad88-45aecf9f4d06.jpg" style="display: inline;">
+							            </div>
+							            <div class="img-6xx-bg">
+							                <img src="./images/dff4da88-5f1c-4564-8de0-8b9821ca8164.jpg" class="J-mer-bigImg" data-original="//a.vpimg3.com/upload/merchandise/pdcvis/2017/01/09/46/dff4da88-5f1c-4564-8de0-8b9821ca8164.jpg" style="display: inline;">
+							            </div>
+							            <div class="img-6xx-bg">
+							                <img src="./images/708ee21a-7981-4e37-b34c-ee01be8d1e50.jpg" class="J-mer-bigImg" data-original="//a.vpimg3.com/upload/merchandise/pdcvis/2017/01/09/59/708ee21a-7981-4e37-b34c-ee01be8d1e50.jpg" style="display: inline;">
+							            </div>
+							            <div class="img-6xx-bg">
+							                <img src="./images/5476487c-e0c1-4123-826c-0f1bd199a692.jpg">
+							            </div>
+							            <div class="img-6xx-bg">
+							                <img src="./images/41bfcf28-ab07-46f9-b364-eadc7a169ce3.jpg">
+							            </div>
+							            <div class="img-6xx-bg">
+							                <img src="./images/93e8795e-fc85-4ef0-9217-74ad19ed530c.jpg">
+							            </div>
+							            <div class="img-6xx-bg">
+							                <img src="./images/158dab89-ae31-456e-badd-47fe6bcb5d60.jpg">
+							            </div>
+							            <div class="img-6xx-bg">
+							                <img src="./images/8472950f-d802-4812-a03b-0573205d266a.jpg">
+							            </div>
+							            <div class="img-6xx-bg">
+							                <img src="./images/c6f28c19-0540-46a7-adc6-73311514b614.jpg">
+							            </div>
+							            <div class="img-6xx-bg">
+							                <img src="./images/fcc89290-11b4-412f-ba11-bd018c238e1a.jpg">
+							            </div>
+							            <div class="img-6xx-bg">
+							                <img src="./images/64ccba54-29db-47c9-a81c-853c158b1ad9.jpg">
+							            </div>
+							            <div class="img-6xx-bg">
+							                <img src="./images/c7eb2df2-0ac5-4e0a-8c76-efaf317cbeb3.jpg">
+							            </div>
+							            <div class="img-6xx-bg">
+							                <img src="./images/02f47c02-7822-40cf-947e-f6afaef55829.jpg">
+							            </div>
+							            <div class="img-6xx-bg">
+							                <img src="./images/e4fbbe7a-ef20-4f94-9c22-c93774473be0.jpg">
+							            </div>
+							            <div class="img-6xx-bg">
+							                <img src="./images/d0c38eb7-268d-4ad9-b5d0-dfe4d73d7121.jpg">
+							            </div>
+							            <div class="img-6xx-bg">
+							                <img src="./images/8cfdf45e-1c63-4f1b-aca8-fd67eaaa8630.jpg">
+							            </div>
+					                </div>
+					                <div class="dc-img-con">
+						                <img width="495" height="626" src="./images/particulars1.jpg" style="display: inline;">
+						                <img width="495" height="626" src="./images/particulars2.jpg" style="display: inline;">
+						                <img width="495" height="626" src="./images/particulars3.jpg" style="display: inline;">
+						                <img width="495" height="626" src="./images/particulars4.jpg" style="display: inline;">
+						                <img width="495" height="626" src="./images/particulars5.jpg" style="display: inline;">
+						                <img width="495" height="626" src="./images/particulars6.jpg" style="display: inline;">
+						            </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- 产品结构说明布局结束 -->
+				
+			</div>
+		</main>
+		<!-- mian布局结束-->
+		<!-- 尾部布局开始 -->
+		<footer>
+			<div class="F-box clearfix">
+				<ul class="F-vip">
+					<li><i class="FV-i1 vip">正品采购</i></li>
+					<li><i class="FV-i2 vip">正品保险</i></li>
+					<li><i class="FV-i3 vip">美国上市</i></li>
+					<li><i class="FV-i4 vip">专业配送</i></li>
+					<li><i class="FV-i5 vip">金牌服务</i></li>
+					<li><i class="FV-i6 vip">万千信赖</i></li>
+					<li><i class="FV-i7 vip">权威荣誉</i></li>
+				</ul>
+				<div class="F-list">
+					<dl class="FL-main">
+
+						<dt>服务保障</dt>
+						<dd><a href="javacript:void(0)">正品保证</a></dd>
+						<dd><a href="javacript:void(0)">7天无理由放心退</a></dd>
+						<dd><a href="javacript:void(0)">退货返运费</a></dd>
+						<dd><a href="javacript:void(0)">7x15小时客户服务</a></dd>
+					</dl>
+					<dl class="FL-main">
+						<dt>购物指南</dt>
+						<dd><a href="javacript:void(0)">导购演示</a></dd>
+						<dd><a href="javacript:void(0)">订单操作</a></dd>
+						<dd><a href="javacript:void(0)">会员注册</a></dd>
+						<dd><a href="javacript:void(0)">账户管理</a></dd>
+						<dd><a href="javacript:void(0)">收货样品</a></dd>
+						<dd><a href="javacript:void(0)">会员等级</a></dd>
+					</dl>
+
+					<dl class="FL-main">
+						<dt>支付方式</dt>
+						<dd><a href="javacript:void(0)">快捷支付</a></dd>
+						<dd><a href="javacript:void(0)">23家主流网银支付</a></dd>
+						<dd><a href="javacript:void(0)">货到付款</a></dd>
+						<dd><a href="javacript:void(0)">支付宝、银联等支付</a></dd>
+						<dd><a href="javacript:void(0)">信用卡支付</a></dd>
+						<dd><a href="javacript:void(0)">唯品钱包支付</a></dd>
+					</dl>
+
+					<dl class="FL-main">
+						<dt>配送方式</dt>
+						<dd><a href="javacript:void(0)">全场满288元免运费
+						<dd><a href="javacript:void(0)">配送范围及运费</a></dd>
+						<dd><a href="javacript:void(0)">验货与签收</a></dd>
+					</dl>
+
+					<dl class="FL-main">
+						<dt>售后服务</dt>
+						<dd><a href="javacript:void(0)">退货政策</a></dd>
+						<dd><a href="javacript:void(0)">退货流程</a></dd>
+						<dd><a href="javacript:void(0)">退款方式和时效</a></dd>
+					</dl>
+					<dl class="FL-main border">
+						<dt>唯品会APP二维码</dt>
+						<dd><img src="./images/footer-sm.png" alt=""></dd>
+						<dd style="font-size:12px";>下载唯品会移动APP</dd>
+					</dl>
+				</div>
+				<div class="F-inwe clearfix">
+					<p class="FI-top">
+						<a href="javacript:void(0)">关于我们&nbsp;&nbsp;|</a>
+						<a href="javacript:void(0)">About us&nbsp;&nbsp;|</a>
+						<a href="javacript:void(0)">Investor Relations&nbsp;&nbsp;|</a>
+						
+						<a href="javacript:void(0)">媒体报道&nbsp;&nbsp;|</a>
+						<a href="javacript:void(0)">品牌招商&nbsp;&nbsp;|</a>
+						<a href="javacript:void(0)">隐私条款&nbsp;&nbsp;|</a>
+						<a href="javacript:void(0)">唯品诚聘&nbsp;&nbsp;|</a>
+						<a href="javacript:void(0)">365爱心基金|</a>
+						<a href="javacript:void(0)">唯品卡&nbsp;&nbsp;|</a>
+						<a href="javacript:void(0)">唯品地图&nbsp;&nbsp;|</a>
+						<a href="javacript:void(0)">品牌大全&nbsp;&nbsp;|</a>
+						<a href="javacript:void(0)">联系我们&nbsp;&nbsp;|</a>
+					</p>
+					<p class="FI-bottom">
+	        			&nbsp;Copyright © 2008-2017 vip.com，All Rights Reserved  使用本网站即表示接受
+						<a href="javacript:void(0)">唯品会用户协议</a>。版权所有 
+						<a href="javacript:void(0)">广州唯品会信息科技有限公司</a>
+						<a href="javacript:void(0)">粤公网安备 44010302111111号</a>
+						<a href="javacript:void(0)"><br><img src="./images/ga.png" alt="">粤ICP备08114786号</a>
+						<a href="javacript:void(0)">网络文化经营许可证：粤网文〔2015〕1528-229</a>
+						<a href="javacript:void(0)">自营主体的营业执照及食品流通许可证信息</a>
+						<a href="javacript:void(0)">互联网药品交易服务资格证（粤C20140002）</a>
+						<a href="javacript:void(0)"></a>
+					</p>
+				</div>
+				<div class="F-footer"style="display:none">
+					<p>
+						<a href="javacript:void(0)" class="FB-img1"></a>
+						<a href="javacript:void(0)" class="FB-img2"></a>
+						<a href="javacript:void(0)" class="FB-img3"></a>
+						<a href="javacript:void(0)" class="FB-img4"></a>
+						<a href="javacript:void(0)" class="FB-img5"></a>
+						<a href="javacript:void(0)" class="FB-img6"></a>
+						<a href="javacript:void(0)" class="FB-img7"></a>
+					</p>
+
+				</div>
+			</div>
+		</footer>
+		<!-- 尾部布局结束 -->
+
+		<!-- 右边固定菜单栏开始 -->
+		<div id="right-fix">
+			<div class="RF-box">
+				<div id="RFB-top">
+					<ul class="RFBT-ul">
+						<li>
+							<i class="iconfont">&#xe615;</i>
+							<i class="title iconfont">账号</i>
+							<div class="RFBTU1-login">
+								<img src="./images/RFBTU1-login-img.jpg" alt="">
+								<p class="title">你好！请登录&nbsp;|&nbsp;注册</p>
+								<div class="B-top">
+									<p class="left"><i></i>我的订单</p>
+									<p class="right"><i></i>我的消息</p>
+								</div>
+								<div class="B-bottom">
+									<a href="javascript:void(0)">会员俱乐部</a>
+								</div>
+							</div>
+						</li>
+						<li class="RFBTUL-L2">
+							<div class="L2-box">
+								<i class="iconfont">&#xe611;</i><i class="title">购物袋</i>
+								<i class="cir">0</i>
+							</div>
+						</li>
+						<li>
+							<i class="iconfont">&#xe614;</i>
+							<p class="dis">我的优惠券</p>
+						</li>
+						<li>
+							<i class="iconfont">&#xe610;</i>
+							<p class="dis">我收藏的品牌</p>
+						</li>
+						<li>
+							<i class="iconfont">&#xe613;</i>
+							<p class="dis">我收藏的商品</p>
+						</li>
+						<li>
+							<i class="iconfont">&#xe60f;</i>
+							<p class="dis">我的足迹</p>
+						</li>
+					</ul>
+				</div>
+				<div class="RFB-bottom">
+					<ul>
+						<li>
+							<i class="iconfont">&#xe612;</i>
+							<p class="dis1 dis">会员反馈</p>
+						</li>
+						<li>
+							<i class="iconfont">&#xe60e;</i>
+							<p class="dis2 dis">返回顶部</p>
+						</li>
+					</ul>
+					
+					
+				</div>
+			</div>
+		</div>
+		<!-- 右边固定菜单栏结束 -->
+	</div>
+</body>
+
+</html>

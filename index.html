@@ -1,0 +1,1744 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="css/init.css">
+	<link rel="stylesheet" href="css/header&footer.css">
+	<link rel="stylesheet" href="css/index-main.css">
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/response.css">
+	<script src="js/jquery-1.7.2.js"></script>
+	<script src="js/index-main.js"></script>
+	<script>
+		var iWidth = document.documentElement.clientWidth/16;  /* 业界常用比值 */
+
+		// alert(iWidth);
+
+		document.getElementsByTagName('html')[0].style.fontSize = iWidth + 'px';
+
+	</script>
+</head>
+<body>
+	<!-- 容器 -->
+	<div class="box">
+		<!-- 头部布局开始 -->
+		<header id="header">
+			<section class="head-top">
+				<!-- 头部的top容器 -->
+				<div class="HTbox">
+					<!-- 选区 -->
+					<div class="HTBsel">
+						<i class="HTBSB-border"></i>
+						<div class="HTBS-btn">
+							<span id="HTBSB-celect">广东</span>
+							<i class="HTBSB-dis"></i>
+							
+						</div>
+						<!-- 选区容器 -->
+						<div class="HTBS-box">
+							<!-- 选区内容 -->
+							<div class="HTBSB-inner">
+								<!-- 城市下拉表格标题 -->
+								<p class="sel-tit">请选择所在的收货地区</p>
+								<!-- 城市下拉表格 -->
+								<table class="sel-table">
+									<tr>
+										<th>A</th>
+										<td><span>安徽</span><span>澳门</span></td>
+									</tr>
+									<tr>
+										<th>B</th>
+										<td><span>北京</span></td>
+									</tr>
+									<tr>
+										<th>C</th>
+										<td><span>重庆</span></td>
+									</tr>
+									<tr>
+										<th>F</th>
+										<td><span>福建</span></td>
+									</tr>
+									<tr>
+										<th>G</th>
+										<td>
+											<span>广东</span>
+											<span>广西</span>
+											<span>贵州</span>
+											<span>甘肃</span>
+										</td>
+									</tr>
+									<tr>
+										<th>H</th>
+										<td>
+											<span>河北</span>
+											<span>河南</span>
+											<span>黑龙江</span>
+											<span>海南</span>
+											<span>湖北</span>
+											<span>湖南</span>
+										</td>
+									</tr>
+									<tr>
+										<th>J</th>
+										<td>
+											<span>江苏</span>
+											<span>吉林</span>
+											<span>江西</span>
+										</td>
+									</tr>
+									<tr>
+										<th>L</th>
+										<td><span>辽宁</span></td>
+									</tr>
+									<tr>
+										<th>N</th>
+										<td>
+											<span>内蒙古</span>
+											<span>宁夏</span>
+										</td>
+									</tr>
+									<tr>
+										<th>Q</th>
+										<td><span>青海</span></td>
+									</tr>
+									<tr>
+										<th>S</th>
+										<td>
+											<span>上海</span>
+											<span>山东</span>
+											<span>山西</span>
+											<span>四川</span>
+											<span>陕西</span>
+										</td>
+									</tr>
+									<tr>
+										<th>T</th>
+										<td>
+											<span>台湾</span>
+											<span>天津</span>
+										</td>
+									</tr>
+									<tr>
+										<th>X</th>
+										<td>
+											<span>西藏</span>
+											<span>香港</span>
+											<span>新疆</span>
+										</td>
+									</tr>
+									<tr>
+										<th>Y</th>
+										<td><span>云南</span></td>
+									</tr>
+									<tr>
+										<th>Z</th>
+										<td><span>浙江</span></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- 头部top菜单栏 -->
+					<ul class="HTBtool clearfix">
+						<li class="HTBTL1">
+							<a href="./login.html">请登录</a>
+							<div class="HTBTL1-dis">
+									<p class="border"></p>
+									<div class="HTBTWD-top">
+										<span class="HTBTWDT-img"></span>
+										<span class="HTBTWDT-font">您好！ [请登录]</span>
+									</div>
+									<div class="HTBTWD-bottom">
+										<ul class="HTBTWDB-left" >
+
+											<li>我的收藏</li>
+											<li>唯品钱包</li>
+											<li>我的唯品币 </li>
+										</ul>
+										<ul class="HTBTWDB-right">
+											<li>我的订单</li>
+											<li>我的优惠券</li>
+											<li>唯品金融</li>
+										</ul>
+									</div>
+							</div>
+						</li>
+							
+						<li><a href="./register.html">注册</a></li>
+						<li><a href="">我的订单</a></li>
+						<li class="HTBTL4">
+							<a href="">我的收藏</a>
+							<i class="HTBtool-dis"></i>
+							<div class="HTBTL4-dis">
+								<p class="border"></p>
+								<span>收藏的品牌(0)</span>
+								<span>收藏的商品(0)</span>
+							</div>
+						</li>
+						<li class="HTBTL5">
+							<a href="">会员俱乐部</a>
+							<i class="HTBtool-dis"></i>
+							<div class="HTBTL5-dis">
+								<p class="border"></p>
+								<ul>
+									<li>俱乐部首页</li>
+									<li>唯品币兑换</li>
+									<li>免费抽大奖</li>
+							</div>
+
+						</li>
+						<li class="HTBTL6">
+							<a href="">客户服务&nbsp;&nbsp;&nbsp;</a>
+							<i class="HTBtool-dis"></i>
+							<div class="HTBTL6-dis">
+								<p class="border"></p>
+								<ul>
+									<li>联系客服</li>
+									<li>帮助中心</li>
+									<li>服务中心</li>
+									<li>知识产权投诉</li>
+							</div>
+						</li>
+						<li class="HTBTL7">
+							<a href="">手机版</a>
+							<div class="HTBTL7-dis">
+								<p class="border"></p>
+								<img src="./images/sm.jpg" alt="">
+								<h2>随时逛 及时抢</h2>
+							</div>
+						</li>
+						<li class="HTBTL8">
+							<a href=""> 更多</a>
+							<i class="HTBtool-dis"></i>
+							<div class="HTBTL8-dis">
+								<p class="border"></p>
+								<div class="top">
+									<h5>合作专区</h5>
+									<p>
+										<span>联名卡申请</span>
+										<span>唯品卡</span>
+										<span>支付专区</span>
+									</p>
+								</div>
+								<div class="buttom">
+									<h5>关于我们</h5>
+									<p>
+										<span>Sell on vip</span>
+										<span>品牌招商</span>
+										<span>官方博客</span>
+									</p>
+								</div>
+								
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</section>
+
+			<section class="head-main">
+				<div class="HM-box">
+					<div class="HMB-left"><img src="./images/logo.png" alt=""></div>
+					<div class="HMB-right">
+						<div class="HMBR-D1"><a href="javacript:void(0)"><img src="./images/tm-img1.png" alt=""></a></div>
+						<div class="HMBR-D2"><a href="javacript:void(0)"><img src="./images/tm-img2.png" alt=""></a></div>
+						<div class="HMBR-D3"><a href="javacript:void(0)"><img src="./images/tm-img3.png" alt=""></a></div>
+						<div class="HMBR-D4">
+							<div class="HMBRD4-box">
+								<i class="bag"title="查看我的购物袋"></i>
+								<span>我的购物袋</span>
+								<p>0</p>
+								<div class="HMBRD4D-dis">
+									<i class="border"></i>
+									<span>你的购物袋还没有商品，再去逛逛吧~</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<nav id="nav">
+				<div class="N-box">
+					<ul class="NB-U1 clearfix">
+						<li class="L1"><a href="javacript:void(0)">首页</a></li>
+						<li><a href="javacript:void(0)">唯品国际</a></li>
+						<li><a href="javacript:void(0)">母婴</a></li>
+						<li><a href="javacript:void(0)">家居家电</a></li>
+						<li><a href="javacript:void(0)">男士</a></li>
+						<li><a href="javacript:void(0)">美妆</a></li>
+						<li><a href="javacript:void(0)">生活</a></li>
+						<li><a href="javacript:void(0)">金融</a></li>
+						<li class="NBRU-L9">
+							<a href="javacript:void(0)">更多<i></i></a>
+							<div class="NBRUL9-dis">
+								<a href="javascript:void(0)">
+									<img src="./images/nav1.jpg" alt="" id="shade">
+									<div class="shade-box">
+										<p class="shade">女装</p>
+									</div>
+								</a>
+
+								<a href="javascript:void(0)">
+									<img src="./images/nav2.jpg" alt="">
+									<div class="shade-box">
+										<p class="shade">鞋包</p>
+									</div>
+								</a>
+								<a href="./particulars.html">
+									<img src="./images/nav3.jpg" alt="">
+									<div class="shade-box">
+										<p class="shade">配饰</p>
+									</div>
+								</a>
+								<a href="javascript:void(0)">
+									<img src="./images/nav4.jpg" alt="">
+									<div class="shade-box">
+										<p class="shade">运动</p>
+									</div>
+								</a>
+								<a href="javascript:void(0)" >
+									<img src="./images/nav5.jpg" alt="">
+									<div class="shade-box">
+										<p class="shade">爱丽奢</p>
+									</div>
+								</a>
+							</div>
+						</li>
+					</ul>
+					<ul class="NB-U2">
+						<li>
+						<a href=""><img src="./images/navsou.png" alt=""><span>分类</span></a>
+						</li>
+						<li>
+						<a href=""><img src="./images/nav2.png" alt="">预告</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!-- 头部布局结束 -->
+
+
+		<!-- mian布局开始 -->
+		<main>
+			<!-- 轮播图布局开始 -->
+			<section class="banner">
+				<img src="./images/top_bg.jpg" alt="">
+				<div class="MB-box">
+					<div class="MBB-bannerbox">
+						<div id="box">
+							<img src="./images/banner1.jpg" alt="" id="1">
+							<img src="./images/banner2.jpg" style="display:none;" alt="" id="2">
+							<img src="./images/banner3.jpg" style="display:none;" alt="" id="3">
+							<span class="btn-left"><i class="font">&#xe619;</i></span>
+							<span class="btn-right"><i class="font">&#xe61b;</i></span>
+						</div>
+						
+					</div>
+					<ul id ="UL">
+						<li class="Li"><a href="javacript:void(0)">丽丽lily女装专场 满399减30</a></li>
+						<li><a href="javacript:void(0)">巴塞尔钟表展 最高满498减100</a></li>
+						<li><a href="javacript:void(0)">运动潮货节 最高满198减30</a></li>
+					</ul>
+				</div>
+			</section>
+			<!-- 轮播图布局结束 -->
+
+			<!-- 左边固定菜单栏布局开始 -->
+			<div class="menu"id="left-fix">
+				<div class="menu-box">
+					<a href="#choiceness"id="index-f1"><span class="font color">&#xe901;</span><span class="title color">精选</span></a>
+					<a href="#frock"id="index-f2"><span class="font">&#xe907;</span><span class="title">女装</span></a>
+					<a href="#Shoes"id="index-f3"><span class="font">&#xe909;</span><span class="title">鞋包</span></a>
+					<a href="#man"id="index-f4"><span class="font">&#xe906;</span><span class="title">男士</span></a>
+					<a href="#exercise"id="index-f5"><span class="font">&#xe90b;</span><span class="title">运动</span></a>
+					<a href="#decorations"id="index-f6"><span class="font">&#xe908;</span><span class="title">饰品</span></a>
+					<a href="#makeup"id="index-f7"><span class="font">&#xe903;</span><span class="title">美妆</span></a>
+					<a href="#infant"id="index-f8"><span class="font">&#xe90d;</span><span class="title">母婴</span></a>
+					<a href="#living"id="index-f9"><span class="font">&#xe902;</span><span class="title">居家</span></a>
+					<a href="#international"id="index-f10"><span class="font">&#xe900;</span><span class="title">国际</span></a>
+					<a href="#life"id="index-f11"><span class="font">&#xe904;</span><span class="title">生活</span></a>
+					<a href="javascript:void(0)"id="index-f12"><span class="font">&#xe90a;</span><span class="title">预告</span></a>
+				</div>
+			</div>
+			<!-- 左边固定菜单栏布局结束 -->
+
+			<!-- 中部内容布局开始 -->
+			<div class="classify-box">
+				<!-- 精选产品布局开始 -->
+				<section class="choiceness clearfix" id="choiceness">
+					<div class="choiceness-img">
+						<img src="./images/choiceness.png" alt="">
+					</div>
+					<div class="choiceness-box clearfix">
+						<div class="CB-div">
+							<img src="./images/choiceness1.jpg" alt="">
+							<a href="javascript:void(0)" class="lo">
+								<img src="./images/logo1.png" alt="">
+								<p class="title">ECCO漫步春色 尽享舒适</p>
+							</a>
+							<div class="CBD-dis">
+								<div class="CBDD-top">
+									<a href="javascript:void(0)" class="dity">
+										<img src="./images/nvshoe1.jpg" alt="">
+										<p class="title">¥1198</p>
+									</a>
+									<a href="javascript:void(0)" class="dity">
+										<img src="./images/nvshoe2.jpg" alt="">
+										<p class="title">¥1198</p>
+									</a>
+									<a href="javascript:void(0)" class="dity">
+										<img src="./images/nvshoe3.jpg" alt="">
+										<p class="title">¥1198</p>
+									</a>
+								</div>
+								<div class="CBDD-bottom">
+									<a href="javascript:void(0)">
+										<img src="./images/logo1.png" alt="">
+									</a>
+									<a href="javascript:void(0)">
+										<button class="btn1">
+											<i class="font">&#xe60d;</i>
+											<i class="title">收藏品牌</i>
+										</button>
+									</a>
+									<a href="javascript:void(0)">
+										<p class="enter">进入专场</p>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="CB-div">
+							<img src="./images/choiceness2.jpg" alt="">
+							<a href="javascript:void(0)" class="lo">
+								<img src="./images/logo2.png" alt="">
+								<p class="title">柒牌 尚新型格 都市风尚</p>
+							</a>
+							<div class="CBD-dis">
+								<div class="CBDD-top">
+									<a href="javascript:void(0)" class="dity">
+										<img src="./images/nvshoe1.jpg" alt="">
+										<p class="title">¥1198</p>
+										</a>
+									<a href="javascript:void(0)" class="dity">
+										<img src="./images/nvshoe3.jpg" alt="">
+										<p class="title">¥1198</p>
+										</a>
+									<a href="javascript:void(0)" class="dity">
+										<img src="./images/nvshoe3.jpg" alt="">
+										<p class="title">¥1198</p>
+										</a>
+								</div>
+								<div class="CBDD-bottom">
+									<a href="javascript:void(0)"><img src="./images/logo2.png" alt=""></a>
+									<a href="javascript:void(0)">
+										<button class="btn1">
+											<i class="font">&#xe60d;</i>
+											<i class="title">收藏品牌</i>
+										</button>
+									</a>
+									<a href="javascript:void(0)">
+										<p class="enter">进入专场</p>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="CB-div">
+							<img src="./images/choiceness3.jpg" alt="">
+							<a href="javascript:void(0)" class="lo">
+								<img src="./images/logo3.png" alt="">
+								<p class="title">柒牌 尚新型格 都市风尚</p>
+							</a>
+							<div class="CBD-dis">
+								<div class="CBDD-top">
+									<a href="javascript:void(0)" class="dity">
+										<img src="./images/m1.jpg" alt="">
+										<p class="title">¥1198</p>
+										</a>
+									<a href="javascript:void(0)" class="dity">
+										<img src="./images/m2.jpg" alt="">
+										<p class="title">¥1198</p>
+										</a>
+									<a href="javascript:void(0)" class="dity">
+										<img src="./images/m3.jpg" alt="">
+										<p class="title">¥1198</p>
+										</a>
+								</div>
+								<div class="CBDD-bottom">
+									<a href="javascript:void(0)"><img src="./images/logo3.png" alt=""></a>
+									<a href="javascript:void(0)">
+										<button class="btn1">
+											<i class="font">&#xe60d;</i>
+											<i class="title">收藏品牌</i>
+										</button>
+									</a>
+									<a href="javascript:void(0)">
+										<p class="enter">进入专场</p>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="CB-div">
+							<img src="./images/choiceness4.jpg" alt="">
+							<a href="javascript:void(0)" class="lo">
+								<img src="./images/logo4.png" alt="">
+								<p class="title title4">时尚优雅 亲民奢侈</p>
+							</a>
+							<div class="CBD-dis">
+								<div class="CBDD-top">
+									<a href="javascript:void(0)" class="dity">
+										<img src="./images/bag1.jpg" alt="">
+										<p class="title">¥1198</p>
+										</a>
+									<a href="javascript:void(0)" class="dity">
+										<img src="./images/bag2.jpg" alt="">
+										<p class="title">¥1198</p>
+										</a>
+									<a href="javascript:void(0)" class="dity">
+										<img src="./images/bag3.jpg" alt="">
+										<p class="title">¥1198</p>
+										</a>
+								</div>
+								<div class="CBDD-bottom">
+									<a href="javascript:void(0)"><img src="./images/logo4.png" alt=""></a>
+									<a href="javascript:void(0)">
+										<button class="btn1">
+											<i class="font">&#xe60d;</i>
+											<i class="title">收藏品牌</i>
+										</button>
+									</a>
+									<a href="javascript:void(0)">
+										<p class="enter">进入专场</p>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="CB-div">
+							<img src="./images/choiceness5.jpg" alt="">
+							<a href="javascript:void(0)" class="lo">
+								<img src="./images/logo5.png" alt="">
+								<p class="title title5"> 简约时尚 知性优雅</p>
+							</a>
+							<div class="CBD-dis">
+								<div class="CBDD-top">
+									<a href="javascript:void(0)" class="dity">
+									<img src="./images/shoe1.jpg" alt="">
+									<p class="title">¥2198</p>
+									</a>
+									<a href="javascript:void(0)" class="dity">
+									<img src="./images/shoe2.jpg" alt="">
+									<p class="title">¥2198</p>
+									</a>
+									<a href="javascript:void(0)" class="dity">
+									<img src="./images/shoe3.jpg" alt="">
+									<p class="title">¥2198</p>
+									</a>
+								</div>
+								<div class="CBDD-bottom">
+									<a href="javascript:void(0)"><img src="./images/logo5.png" alt=""></a>
+									<a href="javascript:void(0)">
+										<button class="btn1">
+											<i class="font">&#xe60d;</i>
+											<i class="title">收藏品牌</i>
+										</button>
+									</a>
+									<a href="javascript:void(0)">
+										<p class="enter">进入专场</p>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="CB-div">
+							<img src="./images/choiceness6.jpg" alt="">
+							<a href="javascript:void(0)" class="lo">
+								<img src="./images/logo6.png" alt="">
+								<p class="title">KENZO时尚圈的艺术收集者</p>
+							</a>
+							<div class="CBD-dis">
+								<div class="CBDD-top">
+									<a href="javascript:void(0)" class="dity">
+										<img src="./images/glasses1.jpg" alt="">
+										<p class="title">¥899</p>
+										</a>
+									<a href="javascript:void(0)" class="dity">
+										<img src="./images/glasses1.jpg" alt="">
+										<p class="title">¥899</p>
+										</a>
+									<a href="javascript:void(0)" class="dity">
+										<img src="./images/glasses1.jpg" alt="">
+										<p class="title">¥899</p>
+										</a>
+								</div>
+								<div class="CBDD-bottom">
+									<a href="javascript:void(0)"><img src="./images/logo6.png" alt=""></a>
+									<a href="javascript:void(0)">
+										<button class="btn1">
+											<i class="font">&#xe60d;</i>
+											<i class="title">收藏品牌</i>
+										</button>
+									</a>
+									<a href="javascript:void(0)">
+										<p class="enter">进入专场</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- 精选产品布局结束 -->
+
+				<!-- 女装产品布局开始 -->
+				<section class="frock"id="frock">
+					<div class="frock-logobox">
+						<img src="./images/frock-logo.png" alt="">
+						<a href="javascript">全部女装品牌</a>
+						<i class="font"></i>
+					</div>
+					<div class="frock-box">
+						<div class="img">
+							<!-- <button class="btn">
+								<i class="font">&#xe60d;</i>
+								<i class="title">收藏品牌</i>
+							</button> -->
+							<img src="./images/frock1.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/frock2.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1.9</span>
+									折起
+								</span>
+								<span class="name">简爱J·EYRE女装专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/frock3.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">0.8</span>
+									折起
+								</span>
+								<span class="name">美标家居服男女混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/frock4.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1.1</span>
+									折起
+								</span>
+								<span class="name">苏醒的乐园女装专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/frock5.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1.5</span>
+									折起
+								</span>
+								<span class="name">美都汇MODEWE女装清仓专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/frock6.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">2.9</span>
+									折起
+								</span>
+								<span class="name">美都汇MODEWE女装清仓专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- 女装产品布局结束 -->
+
+				<!-- 鞋包产品布局开始 -->
+				<section class="Shoes"id="Shoes">
+					<div class="Shoes-logobox">
+						<img src="./images/Shoeslogo.png" alt="">
+						<a href="javascript">全部鞋包品牌 </a>
+						<i class="font"></i>
+					</div>
+					<div class="Shoes-box">
+						<div class="img">
+						<img src="./images/Shoes1.jpg" alt="">
+						<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/Shoes2.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/Shoes3.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/Shoes4.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/Shoes5.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/Shoes6.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- 鞋包产品布局结束 -->
+
+				<!-- 男士产品布局开始 -->
+				<section class="man"id="man">
+					<div class="man-logobox">
+						<img src="./images/manlogo.png" alt="">
+						<a href="javascript">全部男士品牌</a>
+						<i class="font"></i>
+					</div>
+					<div class="man-box">
+						<div class="img">
+							<img src="./images/man1.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/man2.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/man3.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/man4.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/man5.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/man6.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- 男士产品布局结束 -->
+
+				<!-- 运动产品布局开始 -->
+				<section class="exercise"id="exercise">
+					<div class="exercise-logobox">
+						<img src="./images/exerciselogo.png" alt="">
+						<a href="javascript">全部运动品牌</a>
+						<i class="font"></i>
+					</div>
+					<div class="exercise-box">
+						<div class="img">
+							<img src="./images/exercise1.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/exercise2.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/exercise3.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/exercise4.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/exercise5.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/exercise6.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- 运动产品布局结束 -->
+
+				<!-- 饰品产品布局开始 -->
+				<section class="decorations"id="decorations">
+					<div class="decorations-logobox">
+						<img src="./images/decorationslogo.png" alt="">
+						<a href="javascript">全部饰品品牌</a>
+						<i class="font"></i>
+					</div>
+					<div class="decorations-box">
+						<div class="img">
+							<img src="./images/decorations1.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/decorations2.jpg" alt="">
+
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/decorations3.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/decorations4.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/decorations5.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/decorations6.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- 饰品产品布局结束 -->
+
+				<!-- 美妆产品布局开始 -->
+				<section class="makeup"id="makeup">
+					<div class="makeup-logobox">
+						<img src="./images/makeuplogo.png" alt="">
+						<a href="javascript">全部美妆品牌</a>
+						<i class="font"></i>
+					</div>
+					
+					<div class="makeup-box">
+						<div class="img">
+							<img src="./images/makeup1.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/makeup2.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/makeup3.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/makeup4.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/makeup5.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/makeup6.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- 美妆产品布局结束 -->
+
+				<!-- 母婴产品布局开始 -->
+				<section class="infant"id="infant">
+					<div class="infant-logobox">
+						<img src="./images/infantlogo.png" alt="">
+						<a href="javascript">全部母婴品牌</a>
+						<i class="font"></i>
+					</div>
+					<div class="infant-box">
+						<div class="img">
+							<img src="./images/infant1.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/infant2.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/infant3.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/infant4.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/infant5.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/infant6.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- 母婴产品布局结束 -->
+
+				<!-- 居家产品布局开始 -->
+				<section class="living"id="living">
+					<div class="living-logobox">
+						<img src="./images/livinglogo.png" alt="">
+						<a href="javascript">全部居家品牌</a>
+						<i class="font"></i>
+					</div>
+					<div class="living-box">
+						<div class="img">
+							<img src="./images/living1.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/living2.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/living3.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/living4.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/living5.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/living6.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- 居家产品布局结束 -->
+
+				<!-- 国际产品布局开始 -->
+				<section class="international"id="international">
+					<div class="international-logobox">
+						<img src="./images/internationallogo.png" alt="">
+						<a href="javascript">全部国际品牌</a>
+						<i class="font"></i>
+					</div>
+					<div class="international-box">
+						<div class="img">
+							<img src="./images/international1.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/international2.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/international3.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/international4.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/international5.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/international6.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- 国际产品布局结束 -->
+
+				<!-- 生活产品布局开始 -->
+				<section class="life"id="life">
+					<div class="life-logobox">
+						<img src="./images/lifelogo.png" alt="">
+						<a href="javascript">全部国际品牌</a>
+						<i class="font"></i>
+					</div>
+					<div class="life-box">
+						<div class="img">
+							<img src="./images/life1.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/life2.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/life3.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/life4.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/life5.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="./images/life6.jpg" alt="">
+							<div class="info">
+								<span class="count">
+									<span class="bg1">1</span>
+									折起
+								</span>
+								<span class="name">ME&CITY男女装混合专场</span>
+								<p class="time">
+									<i></i>
+									<span>剩13时</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- 生活产品布局结束 -->
+				
+				<!-- 分类尾部布局 -->
+				<div class="classify-over">
+					<a href="javacript:void(0)">逛更多生活品牌</a>
+				</div>
+				<!-- 分类尾部布局结束 -->
+			</div>
+			<!-- 中部内容布局开始 -->
+		</main>
+		<!-- mian布局结束-->
+		<!-- 尾部布局开始 -->
+		<footer>
+			<div class="F-box clearfix">
+				<ul class="F-vip">
+					<li><i class="FV-i1 vip">正品采购</i></li>
+					<li><i class="FV-i2 vip">正品保险</i></li>
+					<li><i class="FV-i3 vip">美国上市</i></li>
+					<li><i class="FV-i4 vip">专业配送</i></li>
+					<li><i class="FV-i5 vip">金牌服务</i></li>
+					<li><i class="FV-i6 vip">万千信赖</i></li>
+					<li><i class="FV-i7 vip">权威荣誉</i></li>
+				</ul>
+				<div class="F-list">
+					<dl class="FL-main">
+
+						<dt>服务保障</dt>
+						<dd><a href="javacript:void(0)">正品保证</a></dd>
+						<dd><a href="javacript:void(0)">7天无理由放心退</a></dd>
+						<dd><a href="javacript:void(0)">退货返运费</a></dd>
+						<dd><a href="javacript:void(0)">7x15小时客户服务</a></dd>
+					</dl>
+					<dl class="FL-main">
+						<dt>购物指南</dt>
+						<dd><a href="javacript:void(0)">导购演示</a></dd>
+						<dd><a href="javacript:void(0)">订单操作</a></dd>
+						<dd><a href="javacript:void(0)">会员注册</a></dd>
+						<dd><a href="javacript:void(0)">账户管理</a></dd>
+						<dd><a href="javacript:void(0)">收货样品</a></dd>
+						<dd><a href="javacript:void(0)">会员等级</a></dd>
+					</dl>
+
+					<dl class="FL-main">
+						<dt>支付方式</dt>
+						<dd><a href="javacript:void(0)">快捷支付</a></dd>
+						<dd><a href="javacript:void(0)">23家主流网银支付</a></dd>
+						<dd><a href="javacript:void(0)">货到付款</a></dd>
+						<dd><a href="javacript:void(0)">支付宝、银联等支付</a></dd>
+						<dd><a href="javacript:void(0)">信用卡支付</a></dd>
+						<dd><a href="javacript:void(0)">唯品钱包支付</a></dd>
+					</dl>
+
+					<dl class="FL-main">
+						<dt>配送方式</dt>
+						<dd><a href="javacript:void(0)">全场满288元免运费
+						<dd><a href="javacript:void(0)">配送范围及运费</a></dd>
+						<dd><a href="javacript:void(0)">验货与签收</a></dd>
+					</dl>
+
+					<dl class="FL-main">
+						<dt>售后服务</dt>
+						<dd><a href="javacript:void(0)">退货政策</a></dd>
+						<dd><a href="javacript:void(0)">退货流程</a></dd>
+						<dd><a href="javacript:void(0)">退款方式和时效</a></dd>
+					</dl>
+					<dl class="FL-main border">
+						<dt>唯品会APP二维码</dt>
+						<dd><img src="./images/footer-sm.png" alt=""></dd>
+						<dd style="font-size:12px";>下载唯品会移动APP</dd>
+					</dl>
+				</div>
+				<div class="F-inwe clearfix">
+					<p class="FI-top">
+						<a href="javacript:void(0)">关于我们&nbsp;&nbsp;|</a>
+						<a href="javacript:void(0)">About us&nbsp;&nbsp;|</a>
+						<a href="javacript:void(0)">Investor Relations&nbsp;&nbsp;|</a>
+						
+						<a href="javacript:void(0)">媒体报道&nbsp;&nbsp;|</a>
+						<a href="javacript:void(0)">品牌招商&nbsp;&nbsp;|</a>
+						<a href="javacript:void(0)">隐私条款&nbsp;&nbsp;|</a>
+						<a href="javacript:void(0)">唯品诚聘&nbsp;&nbsp;|</a>
+						<a href="javacript:void(0)">365爱心基金|</a>
+						<a href="javacript:void(0)">唯品卡&nbsp;&nbsp;|</a>
+						<a href="javacript:void(0)">唯品地图&nbsp;&nbsp;|</a>
+						<a href="javacript:void(0)">品牌大全&nbsp;&nbsp;|</a>
+						<a href="javacript:void(0)">联系我们&nbsp;&nbsp;|</a>
+					</p>
+					<p class="FI-bottom">
+	        			&nbsp;Copyright © 2008-2017 vip.com，All Rights Reserved  使用本网站即表示接受
+						<a href="javacript:void(0)">唯品会用户协议</a>。版权所有 
+						<a href="javacript:void(0)">广州唯品会信息科技有限公司</a>
+						<a href="javacript:void(0)">粤公网安备 44010302111111号</a>
+						<a href="javacript:void(0)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/ga.png" alt="">粤ICP备08114786号</a>
+						<a href="javacript:void(0)">网络文化经营许可证：粤网文〔2015〕1528-229</a>
+						<a href="javacript:void(0)">自营主体的营业执照及食品流通许可证信息</a>
+						<a href="javacript:void(0)">互联网药品交易服务资格证（粤C20140002）</a>
+						<a href="javacript:void(0)"></a>
+					</p>
+				</div>
+				<div class="F-footer"style="display:none">
+					<p>
+						<a href="javacript:void(0)" class="FB-img1"></a>
+						<a href="javacript:void(0)" class="FB-img2"></a>
+						<a href="javacript:void(0)" class="FB-img3"></a>
+						<a href="javacript:void(0)" class="FB-img4"></a>
+						<a href="javacript:void(0)" class="FB-img5"></a>
+						<a href="javacript:void(0)" class="FB-img6"></a>
+						<a href="javacript:void(0)" class="FB-img7"></a>
+					</p>
+
+				</div>
+			</div>
+		</footer>
+		<!-- 尾部布局结束 -->
+
+		<!-- 右边固定菜单栏开始 -->
+		<div id="right-fix">
+			<div class="RF-box">
+				<div id="RFB-top">
+					<ul class="RFBT-ul">
+						<li>
+							<i class="iconfont">&#xe615;</i>
+							<i class="title iconfont">账号</i>
+							<div class="RFBTU1-login">
+								<img src="./images/RFBTU1-login-img.jpg" alt="">
+								<p class="title">你好！请登录&nbsp;|&nbsp;注册</p>
+								<div class="B-top">
+									<p class="left"><i></i>我的订单</p>
+									<p class="right"><i></i>我的消息</p>
+								</div>
+								<div class="B-bottom">
+									<a href="javascript:void(0)">会员俱乐部</a>
+								</div>
+							</div>
+						</li>
+						<li class="RFBTUL-L2">
+							<div class="L2-box">
+								<i class="iconfont">&#xe611;</i><i class="title">购物袋</i>
+								<i class="cir">0</i>
+							</div>
+						</li>
+						<li>
+							<i class="iconfont">&#xe614;</i>
+							<p class="dis">我的优惠券</p>
+						</li>
+						<li>
+							<i class="iconfont">&#xe610;</i>
+							<p class="dis">我收藏的品牌</p>
+						</li>
+						<li>
+							<i class="iconfont">&#xe613;</i>
+							<p class="dis">我收藏的商品</p>
+						</li>
+						<li>
+							<i class="iconfont">&#xe60f;</i>
+							<p class="dis">我的足迹</p>
+						</li>
+					</ul>
+				</div>
+				<div class="RFB-bottom">
+					<ul>
+						<li>
+							<i class="iconfont">&#xe612;</i>
+							<p class="dis1 dis">会员反馈</p>
+						</li>
+						<li>
+							<a href="#header">
+								<i class="iconfont">&#xe60e;</i>
+								<p class="dis2 dis">返回顶部</p>
+							</a>
+						</li>
+					</ul>
+					
+					
+				</div>
+			</div>
+		</div>
+		<!-- 右边固定菜单栏结束 -->
+	</div>
+	<a href="#nvzhuang"></a>
+</body>
+
+</html>
+
+
+
+     
