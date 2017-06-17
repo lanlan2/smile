@@ -202,6 +202,8 @@
 
 		      $('.img').find('img').bind('mouseout',function() {
 
+
+
 		      		//判断浏览器屏幕宽度
 			      if($(window).width()>1600){
 
@@ -218,7 +220,9 @@
 
 		    	
 		    });
-
+		       $('.img').find('img').bind('click',function(){
+		      	window.location.href="particulars.html";
+		      });
 		      $('.CB-div').bind('mouseover',function(){
 
 		      	 if($(window).width()>1500){
