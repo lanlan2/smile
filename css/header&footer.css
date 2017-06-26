@@ -717,7 +717,6 @@ nav .N-box .NB-U1 .NBRU-L9:hover i {
 }
 nav .N-box .NB-U1 .NBRU-L9 .NBRUL9-dis {
   width: 760%;
-  height: 650%;
   z-index: 112;
   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
   padding: 28% 15% 12% 10%;
@@ -729,20 +728,26 @@ nav .N-box .NB-U1 .NBRU-L9 .NBRUL9-dis {
   overflow: hidden;
   font-size: 0;
 }
-nav .N-box .NB-U1 .NBRU-L9 .NBRUL9-dis a {
-  width: 26%;
+nav .N-box .NB-U1 .NBRU-L9 .NBRUL9-dis>a{
+	padding: 0;
+	margin-bottom: 3%;
+	margin-left: 4%;
+	width:44%;
   height: 50%;
   display: inline-block;
   float: left;
   position: relative;
+}nav .N-box .NB-U1 .NBRU-L9 .NBRUL9-dis a>img{
+  display: block;
+  width:100%;
 }
 nav .N-box .NB-U1 .NBRU-L9 .NBRUL9-dis a .shade-box {
   display: block;
-  width: 95%;
-  height: 40%;
+  width: 100%;
+  height: 20%;
   position: absolute;
-  bottom: 25%;
-  left: 11%;
+  bottom:0;
+  left: 0;
   line-height: 20px;
 }
 nav .N-box .NB-U1 .NBRU-L9 .NBRUL9-dis a .shade-box .shade {
@@ -756,7 +761,7 @@ nav .N-box .NB-U1 .NBRU-L9 .NBRUL9-dis a .shade-box .shade {
   font-weight: bold;
 }
 nav .N-box .NB-U1 .NBRU-L9 .NBRUL9-dis a:link .shade-box {
-  height: 40%;
+  height: 20%;
   transition: all 0.3s ease-in 0.1s;
 }
 nav .N-box .NB-U1 .NBRU-L9 .NBRUL9-dis a:hover .shade-box {

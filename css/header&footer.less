@@ -769,7 +769,6 @@ nav{
 
 					.NBRUL9-dis{
 						width: 760%;
-    					height: 650%;
 						z-index:112;
 					    box-shadow: 0 0 3px 3px rgba(0,0,0,.1);
 					    padding: 28% 15% 12% 10%;
@@ -780,20 +779,24 @@ nav{
 					    display: none;
 					    overflow: hidden;
 					    font-size: 0;
-						a{
-							width: 26%;
+						&>a{
+						    padding: 0;
+						    margin-bottom: 3%;
+						    width:44%;
 							height: 50%;
 							display: inline-block;
 							float: left;
 							position: relative;
-
+                            &>img{
+                                width:100%;
+                            }
 							.shade-box{
 								display: block;
-								width: 95%;
-    							height: 40%;
+								width:100%%;
+    							height: 20%;
 								position: absolute;
-								bottom: 25%;
-    							left: 11%;
+								bottom:0;
+    							left: 0%;
     							line-height:20px;
 								
 								.shade{
@@ -813,7 +816,7 @@ nav{
 
 							&:link .shade-box{
 
-								height: 40%;
+								height: 20%;
 								transition:all .3s ease-in .1s;
 							}
 
